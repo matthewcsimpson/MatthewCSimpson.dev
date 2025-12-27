@@ -1,0 +1,29 @@
+@use "@/styles/partials/colours" as *;
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background: $frosted-mint;
+    z-index: 1;
+
+    border-radius: 0.5rem;
+    border: 1px solid $dark-emerald;
+
+    color: $dark-emerald;
+
+    min-width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    &__title,
+    &__text {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    &__show {
+        display: flex;
+        top: 100%;
+    }
+}

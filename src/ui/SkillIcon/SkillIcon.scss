@@ -1,17 +1,17 @@
 @use "@/styles/partials/colours" as *;
 
-.SkillIcon {
-    &__listItem {
-        margin: 0;
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
+.skillicon {
+    margin: 0;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 4rem;
 
-        width: 4rem;
-    }
+    position: relative;
+    cursor: help;
 
     &__link {
         display: inline-block;
