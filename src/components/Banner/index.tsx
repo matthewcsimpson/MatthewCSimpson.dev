@@ -2,6 +2,10 @@ import { Links } from "@/components";
 
 import "@/components/banner/Banner.scss";
 
+/**
+ * Banner component that displays the user's name, title, tagline, and links.
+ * @returns
+ */
 const Banner = () => {
   return (
     <>
