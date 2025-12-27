@@ -1,4 +1,4 @@
-import { Links } from "@/components";
+import { LinksList } from "@/ui";
 
 import "@/components/banner/Banner.scss";
 
@@ -11,11 +11,13 @@ const Banner = () => {
     <>
       <div className="banner">
         <div className="banner__text">
-          <h1>Matthew Simpson</h1>
-          <h2>Full Stack Developer</h2>
-          <p>I make things for the web</p>
+          <h1 className="banner__name">Matthew Simpson</h1>
+          <h2 className="banner__title">Full Stack Developer</h2>
+          <p className="banner__tagline">
+            I am rather tall and I make things for the web.
+          </p>
         </div>
-        <Links />
+        <LinksList />
       </div>
     </>
   );

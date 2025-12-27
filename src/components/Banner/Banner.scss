@@ -14,4 +14,16 @@
         align-items: flex-start;
         gap: 6rem;
     }
+
+    &__name {
+        word-break: break-word;
+    }
+
+    &__title {
+        word-break: break-word;
+    }
+
+    &__tagline {
+        word-break: break-word;
+    }
 }

@@ -1,14 +1,9 @@
 @use "@/styles/partials/colours" as *;
 
-.about {
+.skills {
     width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &__image {
-        width: 75%;
-        filter: saturate(0) contrast(125%);
-    }
 }
