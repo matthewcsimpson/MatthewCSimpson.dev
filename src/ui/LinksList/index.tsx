@@ -1,16 +1,10 @@
-import { LinkIcon } from "@/ui";
+import { type Icons } from "@/types";
+import { generateLinks } from "@/utils";
 
 import "@/ui/LinksList/LinksList.scss";
 
-// Define the Icon type
-type Icon = {
-  label: string;
-  iconClass: string;
-  link: string;
-};
-
 // Define the array of icons with their respective details
-const linkicons: Icon[] = [
+const linkicons: Icons[] = [
   {
     label: "GitHub",
     iconClass: "github",
@@ -38,21 +32,6 @@ const linkicons: Icon[] = [
   },
 ];
 
-interface LinkGeneratorProps {
-  icons: Icon[];
-}
-
-/**
- * Generates a list of LinkIcon components based on the provided icons.
- * @param icons - An array of icon objects containing label, iconClass, and link.
- * @returns
- */
-const linkGenerator = ({ icons }: LinkGeneratorProps) => {
-  return icons.map(({ label, iconClass, link }) => (
-    <LinkIcon key={label} label={label} iconClass={iconClass} link={link} />
-  ));
-};
-
 /**
  * Links component that renders a list of links.
  * @returns
@@ -60,7 +39,7 @@ const linkGenerator = ({ icons }: LinkGeneratorProps) => {
 const LinksList = () => {
   return (
     <div className="links">
-      <ul className="links__list">{linkGenerator({ icons: linkicons })}</ul>
+      <ul className="links__list">{generateLinks({ icons: linkicons })}</ul>
     </div>
   );
 };

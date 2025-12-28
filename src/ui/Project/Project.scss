@@ -1,0 +1,54 @@
+@use "@/styles/partials/colours" as *;
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid $evergreen;
+
+    padding: 1rem;
+
+    &:nth-child(odd) {
+        background-color: darken($dark-emerald, 2);
+    }
+    &:nth-child(even) {
+        background-color: lighten($dark-emerald, 2);
+    }
+
+    &:last-child {
+        border-bottom: 1px solid $evergreen;
+    }
+
+    &__group,
+    &__description {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__imagecontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image {
+        width: 90%;
+    }
+
+    &__tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    &__tag {
+        background-color: $evergreen;
+        color: $frosted-mint;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+    }
+}

@@ -20,13 +20,11 @@
 .right {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     gap: 2rem;
     width: 100%;
     background-color: $evergreen;
 
     @include tablet {
-        padding: 2rem;
         gap: 2rem;
     }
 }
@@ -36,11 +34,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 
     @include tablet {
         width: 45%;
         height: 100vh;
         margin: 0 0 2rem 0;
+        padding: 2rem;
     }
 }
 

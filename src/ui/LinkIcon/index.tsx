@@ -3,7 +3,7 @@ import "@/ui/LinkIcon/LinkIcon.scss";
 interface LinkIconProps {
   label: string;
   iconClass: string;
-  link: string;
+  link?: string;
 }
 
 /**

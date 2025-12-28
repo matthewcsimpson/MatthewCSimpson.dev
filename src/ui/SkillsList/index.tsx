@@ -1,12 +1,6 @@
-import { SkillIcon } from "@/ui";
-
+import { type Icons } from "@/types";
+import { generateSkills } from "@/utils";
 import "@/ui/SkillsList/SkillsList.scss";
-
-type Icons = {
-  label: string;
-  text?: string;
-  iconClass: string;
-};
 
 const skillicons: Icons[] = [
   { label: "HTML5", iconClass: "html", text: "" },
@@ -42,21 +36,6 @@ const skillicons: Icons[] = [
   { label: "Npmjs", iconClass: "npmjs", text: "" },
 ];
 
-interface SkillGeneratorProps {
-  icons: Icons[];
-}
-
-/**
- * Generates a list of LinkIcon components based on the provided icons.
- * @param icons - An array of icon objects containing label, iconClass, and link.
- * @returns
- */
-const skillGenerator = ({ icons }: SkillGeneratorProps) => {
-  return icons.map(({ label, text, iconClass }) => (
-    <SkillIcon key={label} text={text} label={label} iconClass={iconClass} />
-  ));
-};
-
 /**
  * SkillsList component that renders a list of skills.
  * @returns
@@ -65,7 +44,7 @@ const SkillsList = () => {
   return (
     <div className="skillslist">
       <ul className="skillslist__list">
-        {skillGenerator({ icons: skillicons })}
+        {generateSkills({ icons: skillicons })}
       </ul>
     </div>
   );
