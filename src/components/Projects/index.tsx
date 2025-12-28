@@ -4,8 +4,8 @@ import "@/components/Projects/Projects.scss";
 
 const ProjectsText = {
   title: "Projects",
-  description:
-    "This is a list of projects I have worked on both personally and professoinally which range from the very silly to the very serious.",
+  // description:
+  //   "This is a list of projects I have worked on both personally and professoinally which range from the very silly to the very serious.",
 };
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
     <div className="projects">
       <SectionHeader
         title={ProjectsText.title}
-        description={ProjectsText.description}
+        // description={ProjectsText.description}
       />
 
       <ProjectsList />

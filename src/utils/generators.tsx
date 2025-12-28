@@ -1,5 +1,5 @@
 import { LinkIcon, Project, SkillIcon, Tag } from "@/ui";
-import { type Icons, type ProjectData, type TagType } from "@/types";
+import type { Icons, ProjectData, TagType } from "@/types";
 
 interface GenerateLinksProps {
   icons: Icons[];
@@ -72,9 +72,13 @@ const generateSkills = ({ icons }: GenerateSkillsProps) => {
  * @returns
  */
 const generateTags = (tags: TagType[]) => {
-  return tags.map((tag) => (
-    <Tag type={tag.type} key={tag.name} text={tag.name} />
-  ));
+  return (
+    <>
+      {tags.map((tag) => (
+        <Tag type={tag.type} key={tag.name} text={tag.name} />
+      ))}
+    </>
+  );
 };
 
 export {

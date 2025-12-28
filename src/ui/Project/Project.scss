@@ -6,18 +6,32 @@
     align-items: center;
     justify-content: center;
 
-    border-bottom: 1px solid $evergreen;
+    border-top: 1px dotted $evergreen;
 
     padding: 1rem;
 
-    &:last-child {
-        border-bottom: none;
+    // &:last-child {
+    //     border-top: none;
+    // }
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-weight: bold;
+
+        &--highlight {
+            color: $frosted-mint;
+            font-style: italic;
+        }
     }
 
-    &__group,
     &__description {
         margin: 0;
         padding: 1rem 0;
+        width: 80%;
+        font-size: 0.75rem;
+        text-align: center;
     }
 
     &__imagecontainer {

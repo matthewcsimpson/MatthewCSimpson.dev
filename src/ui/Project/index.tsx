@@ -1,4 +1,4 @@
-import type { TagType } from "@/types";
+import type { GithubType, TagType } from "@/types";
 import { generateTags } from "@/utils";
 
 import "@/ui/Project/Project.scss";
@@ -9,6 +9,9 @@ interface ProjectProps {
   imageSrc: string;
   description: string;
   tags: TagType[];
+  liveLink?: string;
+  githubLink?: string;
+  githubType?: GithubType;
 }
 
 const Project = ({
@@ -17,16 +20,26 @@ const Project = ({
   imageSrc,
   description,
   tags,
-}: ProjectProps) => {
+}: // liveLink,
+// githubLink,
+// githubType,
+ProjectProps) => {
   return (
     <>
       <div className="project">
-        <h4 className="project__title">{title}</h4>
+        <h4 className="project__title">
+          {group ? "I worked on" : "I made"}{" "}
+          <span className="project__title--highlight">{title}</span>
+        </h4>
+        {group && (
+          <h4 className="project__title project__title--group">
+            with <span className="project__title--highlight">{group}</span>
+          </h4>
+        )}
+        <p className="project__description">{description}</p>
         <div className="project__imagecontainer">
           <img className="project__image" src={imageSrc} alt={title} />
         </div>
-        <h5 className="project__group">{group}</h5>
-        <p className="project__description">{description}</p>
         <div className="project__tags">{generateTags(tags)}</div>
       </div>
     </>

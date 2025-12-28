@@ -1,0 +1,114 @@
+import type { ProjectData } from "@/types";
+
+export const projectsData: ProjectData[] = [
+  {
+    title: "CoordConversion",
+    group: "",
+    imageSrc: "/images/coordconversion-home.png",
+    description:
+      "An NPM library to convert between various coordinate systems used in geospatial applications.",
+    githubType: "repository",
+    githubLink: "",
+    liveLink: "https://coordconversion.app",
+    tags: [
+      { name: "TypeScript", type: "language" },
+      { name: "Jest", type: "language" },
+      { name: "npm", type: "language" },
+      { name: "GitHub", type: "default" },
+    ],
+  },
+
+  {
+    title: "Whale Report System",
+    group: "Skyrocket Digital",
+    imageSrc: "/images/whale-report-home.png",
+    description:
+      "A web app for mariners to report and be alerted to whale sightings.",
+    githubType: "case-study",
+    githubLink: "",
+    liveLink: "",
+    tags: [
+      { name: "HTML", type: "language" },
+      { name: "TypeScript", type: "language" },
+      { name: "CSS3", type: "language" },
+      { name: "Sass", type: "framework" },
+      { name: "ReactJS", type: "framework" },
+      { name: "NextJS", type: "framework" },
+      { name: "Azure", type: "default" },
+      { name: "GitHub", type: "default" },
+    ],
+  },
+  {
+    title: "Whale Report Administration",
+    group: "Skyrocket Digital",
+    imageSrc: "/images/whale-admin-home.png",
+    description: "A web app to administer the Whale Report System.",
+    githubType: "case-study",
+    githubLink: "",
+    liveLink: "",
+    tags: [
+      { name: "HTML", type: "language" },
+      { name: "TypeScript", type: "language" },
+      { name: "CSS3", type: "language" },
+      { name: "Sass", type: "framework" },
+      { name: "ReactJS", type: "framework" },
+      { name: "NextJS", type: "framework" },
+      { name: "Azure", type: "default" },
+      { name: "GitHub", type: "default" },
+    ],
+  },
+  {
+    title: "Ferengi Rules of Acquisition API",
+    group: "Personal Project",
+    imageSrc: "/images/rulesofacquisition-home.png",
+    description:
+      "A RESTful API providing access to the Ferengi Rules of Acquisition from Star Trek.",
+    githubType: "repository",
+    githubLink: "",
+    liveLink: "https://ferengi-rules-api.vercel.app/api/rules",
+    tags: [
+      { name: "JavaScript", type: "language" },
+      { name: "NodeJS", type: "framework" },
+      { name: "ExpressJS", type: "framework" },
+      { name: "Heroku", type: "default" },
+      { name: "GitHub", type: "default" },
+    ],
+  },
+  {
+    title: "Code4rena.com",
+    group: "Stack Five",
+    imageSrc: "/images/code4rena-home.png",
+    description: "A platform for decentralized security audits.",
+    githubType: "case-study",
+    githubLink: "",
+    liveLink: "",
+    tags: [
+      { name: "HTML", type: "language" },
+      { name: "TypeScript", type: "language" },
+      { name: "CSS3", type: "language" },
+      { name: "ReactJS", type: "framework" },
+      { name: "NextJS", type: "framework" },
+      { name: "Sass", type: "framework" },
+      { name: "Vercel", type: "default" },
+      { name: "GitHub", type: "default" },
+    ],
+  },
+  {
+    title: "York1 ",
+    group: "Stack Five",
+    imageSrc: "/images/york1-desktop-home.png",
+    description:
+      "A platform to for construction and industrial clients to rent waste management equipment.",
+    githubType: "case-study",
+    githubLink:
+      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/tree/main/York1",
+    liveLink: "https://wms.york1.com/OnlineBin/TempServiceSiteAddress.aspx",
+    tags: [
+      { name: "HTML", type: "language" },
+      { name: "JavaScript", type: "language" },
+      { name: "CSS3", type: "language" },
+      { name: "Sass", type: "framework" },
+      { name: "GitHub", type: "default" },
+    ],
+  },
+];

@@ -8,15 +8,19 @@
 
     color: $frosted-mint;
 
-    &--default {
-        background-color: $celadon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $deep-forest;
+
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.25rem;
     }
 
-    &--language {
-        background-color: $deep-forest;
-    }
-
-    &--framework {
-        background-color: $mint-leaf;
+    &--owner {
+        background-color: $evergreen;
     }
 }
