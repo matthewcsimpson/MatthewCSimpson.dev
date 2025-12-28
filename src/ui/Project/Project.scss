@@ -6,19 +6,12 @@
     align-items: center;
     justify-content: center;
 
-    border-top: 1px solid $evergreen;
+    border-bottom: 1px solid $evergreen;
 
     padding: 1rem;
 
-    &:nth-child(odd) {
-        background-color: darken($dark-emerald, 2);
-    }
-    &:nth-child(even) {
-        background-color: lighten($dark-emerald, 2);
-    }
-
     &:last-child {
-        border-bottom: 1px solid $evergreen;
+        border-bottom: none;
     }
 
     &__group,
@@ -42,13 +35,5 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 1rem;
-    }
-
-    &__tag {
-        background-color: $evergreen;
-        color: $frosted-mint;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.25rem;
-        font-size: 0.875rem;
     }
 }

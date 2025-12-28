@@ -1,0 +1,22 @@
+@use "@/styles/partials/colours" as *;
+
+.tag {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    color: $frosted-mint;
+
+    &--default {
+        background-color: $celadon;
+    }
+
+    &--language {
+        background-color: $deep-forest;
+    }
+
+    &--framework {
+        background-color: $mint-leaf;
+    }
+}

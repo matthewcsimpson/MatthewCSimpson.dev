@@ -1,5 +1,5 @@
 import { type ProjectData } from "@/types";
-import { generateProjects } from "@/utils/generators";
+import { generateProjects } from "@/utils";
 
 import "@/ui/ProjectsList/ProjectsList.scss";
 
@@ -9,21 +9,41 @@ const projectsData: ProjectData[] = [
     group: "Skyrocket Digital",
     imageSrc: "/images/whale-admin-home.png",
     description: "The Whale Report Administration is a web application.",
-    tags: ["HTML", "TypeScript", "CSS3", "Sass", "React", "NextJS", "Azure"],
+    tags: [
+      { name: "HTML", type: "language" },
+      { name: "TypeScript", type: "language" },
+      { name: "CSS3", type: "language" },
+      { name: "Sass", type: "framework" },
+      { name: "React", type: "framework" },
+      { name: "NextJS", type: "framework" },
+      { name: "Azure", type: "default" },
+    ],
   },
   {
     title: "Code4rena",
     group: "Stack Five",
     imageSrc: "/images/code4rena-home.png",
     description: "This is the first project.",
-    tags: ["HTML", "TypeScript", "CSS3", "NextJS", "Sass", "Vercel"],
+    tags: [
+      { name: "HTML", type: "language" },
+      { name: "TypeScript", type: "language" },
+      { name: "CSS3", type: "language" },
+      { name: "NextJS", type: "framework" },
+      { name: "Sass", type: "framework" },
+      { name: "Vercel", type: "default" },
+    ],
   },
   {
     title: "York1",
     group: "Stack Five",
     imageSrc: "/images/york1-desktop-home.png",
     description: "This is the second project.",
-    tags: ["HTML", "JavaScript", "CSS3", "Sass"],
+    tags: [
+      { name: "HTML", type: "language" },
+      { name: "JavaScript", type: "language" },
+      { name: "CSS3", type: "language" },
+      { name: "Sass", type: "framework" },
+    ],
   },
 ];
 

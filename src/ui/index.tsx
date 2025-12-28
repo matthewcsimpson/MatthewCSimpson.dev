@@ -5,4 +5,5 @@ export { default as ProjectsList } from "@/ui/ProjectsList";
 export { default as SectionHeader } from "@/ui/SectionHeader";
 export { default as SkillIcon } from "@/ui/SkillIcon";
 export { default as SkillsList } from "@/ui/SkillsList";
+export { default as Tag } from "@/ui/Tag";
 export { default as ToolTip } from "@/ui/ToolTip";

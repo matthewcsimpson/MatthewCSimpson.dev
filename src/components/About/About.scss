@@ -9,6 +9,8 @@
 
     padding: 1rem;
 
+    border-bottom: 1px solid $evergreen;
+
     &__image {
         width: 75%;
         filter: hue-rotate(15deg);

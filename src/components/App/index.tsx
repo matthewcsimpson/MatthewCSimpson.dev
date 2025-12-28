@@ -1,4 +1,4 @@
-import { About, Banner, Projects, Resume, Skills } from "@/components";
+import { About, Banner, Footer, Projects, Resume, Skills } from "@/components";
 
 import "@/components/App/App.scss";
 
@@ -15,8 +15,9 @@ const App = () => {
       <div className="right">
         <About />
         <Projects />
-        <Resume />
         <Skills />
+        <Resume />
+        <Footer />
       </div>
     </div>
   );

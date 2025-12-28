@@ -8,11 +8,13 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-align: center;
 
     @include tablet {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 6rem;
+        text-align: left;
     }
 
     &__name {

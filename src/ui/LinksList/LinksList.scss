@@ -1,7 +1,17 @@
 @use "@/styles/partials/colours" as *;
+@use "@/styles/partials/mixins" as *;
 
 .links {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
     &__list {
         list-style: none;

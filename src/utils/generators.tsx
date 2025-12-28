@@ -1,5 +1,5 @@
-import { LinkIcon, Project, SkillIcon } from "@/ui";
-import { type Icons, type ProjectData } from "@/types";
+import { LinkIcon, Project, SkillIcon, Tag } from "@/ui";
+import { type Icons, type ProjectData, type TagType } from "@/types";
 
 interface GenerateLinksProps {
   icons: Icons[];
@@ -26,7 +26,7 @@ const generateLinks = ({ icons }: GenerateLinksProps) => {
 
 /**
  * A function to generate paragraphs from an array of strings
- * @param paragraphs
+ * @param paragraphs - An array of strings representing the paragraphs.
  * @returns
  */
 const generateParagraphs = ({ paragraphs }: generateParagraphsProps) => {
@@ -38,8 +38,8 @@ const generateParagraphs = ({ paragraphs }: generateParagraphsProps) => {
 };
 
 /**
- *
- * @param projects
+ * Generates a list of Project components based on the provided projects.
+ * @param projects - An array of project objects containing title, group, imageSrc, description, and tags.
  * @returns
  */
 const generateProjects = (projects: ProjectData[]) => {
@@ -66,4 +66,21 @@ const generateSkills = ({ icons }: GenerateSkillsProps) => {
   ));
 };
 
-export { generateLinks, generateParagraphs, generateProjects, generateSkills };
+/**
+ * Generates a list of Tag components based on the provided tags.
+ * @param tags - An array of strings representing the tags.
+ * @returns
+ */
+const generateTags = (tags: TagType[]) => {
+  return tags.map((tag) => (
+    <Tag type={tag.type} key={tag.name} text={tag.name} />
+  ));
+};
+
+export {
+  generateLinks,
+  generateParagraphs,
+  generateProjects,
+  generateSkills,
+  generateTags,
+};
