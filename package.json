@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\""
+    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    "start": "serve -s dist -l $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
@@ -25,6 +27,8 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
-    "react-dom": "^19.2.3"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "serve": "^14.2.5"
   }
 }
