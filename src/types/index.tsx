@@ -17,6 +17,7 @@ export type GithubType = "repository" | "case-study";
 export type ProjectData = {
   title: string;
   description: string;
+  longDescription?: string;
   group: string;
   imageSrc: string;
   githubType?: GithubType;

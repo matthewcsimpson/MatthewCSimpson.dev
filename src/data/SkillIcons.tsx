@@ -17,6 +17,7 @@ export const skillicons: Icons[] = [
   { label: "Jest", iconClass: "jest", text: "" },
 
   { label: "Nodejs", iconClass: "nodejs", text: "" },
+  { label: "Expressjs", iconClass: "express", text: "" },
   { label: "Nestjs", iconClass: "nestjs", text: "" },
   { label: "Java", iconClass: "java", text: "" },
   { label: "Graphql", iconClass: "graphql", text: "" },
@@ -24,12 +25,15 @@ export const skillicons: Icons[] = [
   { label: "Postgresql", iconClass: "postgresql", text: "" },
   { label: "Prisma", iconClass: "prisma", text: "" },
   { label: "JSON", iconClass: "json", text: "" },
+  { label: "Swagger", iconClass: "swagger", text: "" },
 
   { label: "Auth0", iconClass: "auth0", text: "" },
   { label: "Azure", iconClass: "azure", text: "" },
+  { label: "Cloudflare", iconClass: "cloudflare", text: "" },
   { label: "Git", iconClass: "git", text: "" },
   { label: "Github", iconClass: "github", text: "" },
   { label: "Heroku", iconClass: "heroku", text: "" },
   { label: "Vercel", iconClass: "vercel", text: "" },
   { label: "NPM", iconClass: "npm", text: "" },
+  { label: "Bash", iconClass: "bash", text: "" },
 ];

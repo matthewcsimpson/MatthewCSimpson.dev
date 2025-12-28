@@ -2,13 +2,30 @@ import type { ProjectData } from "@/types";
 
 export const projectsData: ProjectData[] = [
   {
+    title: "De-AI Google",
+    group: "",
+    imageSrc: "/images/de-ai-google-home.png",
+    description:
+      "A Chrome extension that suppresses the AI-generated content in Google Search results.",
+    githubType: "repository",
+    githubLink: "https://github.com/matthewcsimpson/De-AI-Google",
+    liveLink:
+      "https://chromewebstore.google.com/detail/de-ai-google/nkcedogblnkemelngcggpglflocghmfh?pli=1",
+    tags: [
+      { name: "JavaScript", type: "language" },
+      { name: "Bash", type: "language" },
+      { name: "Chrome", type: "language" },
+      { name: "GitHub", type: "default" },
+    ],
+  },
+  {
     title: "CoordConversion",
     group: "",
     imageSrc: "/images/coordconversion-home.png",
     description:
       "An NPM library to convert between various coordinate systems used in geospatial applications.",
     githubType: "repository",
-    githubLink: "",
+    githubLink: "https://github.com/matthewcsimpson/CoordConversions",
     liveLink: "https://coordconversion.app",
     tags: [
       { name: "TypeScript", type: "language" },
@@ -17,7 +34,6 @@ export const projectsData: ProjectData[] = [
       { name: "GitHub", type: "default" },
     ],
   },
-
   {
     title: "Whale Report System",
     group: "Skyrocket Digital",
@@ -25,7 +41,8 @@ export const projectsData: ProjectData[] = [
     description:
       "A web app for mariners to report and be alerted to whale sightings.",
     githubType: "case-study",
-    githubLink: "",
+    githubLink:
+      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report",
     liveLink: "",
     tags: [
       { name: "HTML", type: "language" },
@@ -34,6 +51,8 @@ export const projectsData: ProjectData[] = [
       { name: "Sass", type: "framework" },
       { name: "ReactJS", type: "framework" },
       { name: "NextJS", type: "framework" },
+      { name: "Auth0", type: "framework" },
+      { name: "Swagger", type: "framework" },
       { name: "Azure", type: "default" },
       { name: "GitHub", type: "default" },
     ],
@@ -44,7 +63,8 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/whale-admin-home.png",
     description: "A web app to administer the Whale Report System.",
     githubType: "case-study",
-    githubLink: "",
+    githubLink:
+      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report-Admin",
     liveLink: "",
     tags: [
       { name: "HTML", type: "language" },
@@ -53,23 +73,26 @@ export const projectsData: ProjectData[] = [
       { name: "Sass", type: "framework" },
       { name: "ReactJS", type: "framework" },
       { name: "NextJS", type: "framework" },
+      { name: "Auth0", type: "framework" },
+      { name: "Swagger", type: "framework" },
       { name: "Azure", type: "default" },
       { name: "GitHub", type: "default" },
     ],
   },
   {
     title: "Ferengi Rules of Acquisition API",
-    group: "Personal Project",
+    group: "",
     imageSrc: "/images/rulesofacquisition-home.png",
     description:
       "A RESTful API providing access to the Ferengi Rules of Acquisition from Star Trek.",
     githubType: "repository",
-    githubLink: "",
+    githubLink: "https://github.com/matthewcsimpson/Rules-of-Acquisition-API",
     liveLink: "https://ferengi-rules-api.vercel.app/api/rules",
     tags: [
       { name: "JavaScript", type: "language" },
       { name: "NodeJS", type: "framework" },
       { name: "ExpressJS", type: "framework" },
+      { name: "Swagger", type: "framework" },
       { name: "Heroku", type: "default" },
       { name: "GitHub", type: "default" },
     ],
@@ -80,8 +103,9 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/code4rena-home.png",
     description: "A platform for decentralized security audits.",
     githubType: "case-study",
-    githubLink: "",
-    liveLink: "",
+    githubLink:
+      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Code4rena-Platform",
+    liveLink: "https://code4rena.com/",
     tags: [
       { name: "HTML", type: "language" },
       { name: "TypeScript", type: "language" },
