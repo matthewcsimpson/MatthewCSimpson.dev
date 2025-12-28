@@ -1,17 +1,19 @@
 // Colours
+$white: #ffffff;
 $frosted-mint: #d8f3dc;
 $celadon: #95d5b2;
 $mint-leaf: #52b788;
 $dark-emerald: #2d6a4f;
 $evergreen: #081c15;
-$white: #ffffff;
+$black: #010906;
 
 // Map
 $colors: (
+    "white": $white,
     "frosted-mint": $frosted-mint,
     "celadon": $celadon,
     "dark-emerald": $dark-emerald,
     "mint-leaf": $mint-leaf,
     "evergreen": $evergreen,
-    "white": $white
+    "black": $black
 );

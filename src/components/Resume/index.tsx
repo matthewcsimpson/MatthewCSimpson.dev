@@ -1,5 +1,11 @@
+import { SectionHeader } from "@/ui";
+
 const Resume = () => {
-  return <div>Resume Component</div>;
+  return (
+    <div className="resume">
+      <SectionHeader title="resume" />
+    </div>
+  );
 };
 
 export default Resume;

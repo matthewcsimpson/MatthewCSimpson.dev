@@ -1,15 +1,20 @@
-import { SkillsList } from "@/ui";
+import { SectionHeader, SkillsList } from "@/ui";
 
 import "@/components/Skills/Skills.scss";
+
+const SkillsText = {
+  title: "skills",
+  description:
+    "Here is a shameless and non-exhaustive list of technologies I am have used before or at least am familiar with.",
+};
 
 const Skills = () => {
   return (
     <div className="skills">
-      <h3 className="skills__title">Skills</h3>
-      <p className="skills__text">
-        Here is a shameless and non-exclusive array of icons highlighting tools
-        and technology that I have experience with.
-      </p>
+      <SectionHeader
+        title={SkillsText.title}
+        description={SkillsText.description}
+      />
 
       <SkillsList />
     </div>

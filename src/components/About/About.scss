@@ -9,6 +9,10 @@
 
     &__image {
         width: 75%;
-        filter: saturate(0) contrast(125%);
+        filter: hue-rotate(15deg);
+    }
+
+    &__text {
+        padding: 0 0 1rem 0;
     }
 }
