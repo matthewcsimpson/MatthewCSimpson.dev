@@ -1,6 +1,6 @@
 import { LinksList } from "@/ui";
 
-import "@/components/banner/Banner.scss";
+import "@/components/Banner/Banner.scss";
 
 /**
  * Banner component that displays the user's name, title, tagline, and links.
