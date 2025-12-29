@@ -15,13 +15,14 @@ export type TagType = {
 export type GithubType = "repository" | "case-study";
 
 export type ProjectData = {
+  id: string;
   title: string;
   description: string;
   longDescription?: string;
   group: string;
   imageSrc: string;
-  githubType?: GithubType;
-  githubLink?: string;
-  liveLink?: string;
+  githubType: GithubType;
+  githubLink: string;
+  liveLink: string;
   tags: TagType[];
 };

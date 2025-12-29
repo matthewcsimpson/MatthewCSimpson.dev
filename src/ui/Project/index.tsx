@@ -1,29 +1,27 @@
-import type { GithubType, TagType } from "@/types";
-import { generateTags } from "@/utils";
+import { Link } from "react-router-dom";
+
+import type { TagType } from "@/types";
 
 import "@/ui/Project/Project.scss";
+import TagList from "../TagList";
 
 interface ProjectProps {
+  id: string;
   title: string;
   group: string;
   imageSrc: string;
   description: string;
   tags: TagType[];
-  liveLink?: string;
-  githubLink?: string;
-  githubType?: GithubType;
 }
 
 const Project = ({
+  id,
   title,
   group,
   imageSrc,
   description,
   tags,
-}: // liveLink,
-// githubLink,
-// githubType,
-ProjectProps) => {
+}: ProjectProps) => {
   return (
     <>
       <div className="project">
@@ -40,7 +38,12 @@ ProjectProps) => {
         <div className="project__imagecontainer">
           <img className="project__image" src={imageSrc} alt={title} />
         </div>
-        <div className="project__tags">{generateTags(tags)}</div>
+        <TagList tags={tags} />
+        <Link className="project__overlay" to={`/project/${id}`}>
+          <h2 className="project__overlay-text">
+            Would You Like To Know More?
+          </h2>
+        </Link>
       </div>
     </>
   );

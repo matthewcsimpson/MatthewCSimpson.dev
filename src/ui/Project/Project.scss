@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 
     border-top: 1px dotted $evergreen;
 
@@ -42,14 +44,39 @@
     }
 
     &__image {
-        width: 90%;
+        width: 40%;
     }
 
-    &__tags {
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
         display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
         justify-content: center;
-        margin-top: 1rem;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+        z-index: 1;
+        text-decoration: none;
+
+        &:focus,
+        &:focus-visible {
+            opacity: 1;
+        }
+    }
+
+    &__overlay-text {
+        margin: 0;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    &:hover &__overlay {
+        opacity: 1;
     }
 }

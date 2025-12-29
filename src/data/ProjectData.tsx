@@ -2,6 +2,7 @@ import type { ProjectData } from "@/types";
 
 export const projectsData: ProjectData[] = [
   {
+    id: "de-ai-google",
     title: "De-AI Google",
     group: "",
     imageSrc: "/images/de-ai-google-home.png",
@@ -19,6 +20,7 @@ export const projectsData: ProjectData[] = [
     ],
   },
   {
+    id: "coordconversion",
     title: "CoordConversion",
     group: "",
     imageSrc: "/images/coordconversion-home.png",
@@ -35,6 +37,7 @@ export const projectsData: ProjectData[] = [
     ],
   },
   {
+    id: "whale-report-system",
     title: "Whale Report System",
     group: "Skyrocket Digital",
     imageSrc: "/images/whale-report-home.png",
@@ -58,6 +61,7 @@ export const projectsData: ProjectData[] = [
     ],
   },
   {
+    id: "whale-report-administration",
     title: "Whale Report Administration",
     group: "Skyrocket Digital",
     imageSrc: "/images/whale-admin-home.png",
@@ -80,6 +84,7 @@ export const projectsData: ProjectData[] = [
     ],
   },
   {
+    id: "ferengi-rules-of-acquisition-api",
     title: "Ferengi Rules of Acquisition API",
     group: "",
     imageSrc: "/images/rulesofacquisition-home.png",
@@ -98,6 +103,7 @@ export const projectsData: ProjectData[] = [
     ],
   },
   {
+    id: "code4rena",
     title: "Code4rena.com",
     group: "Stack Five",
     imageSrc: "/images/code4rena-home.png",
@@ -118,6 +124,7 @@ export const projectsData: ProjectData[] = [
     ],
   },
   {
+    id: "york1",
     title: "York1 ",
     group: "Stack Five",
     imageSrc: "/images/york1-desktop-home.png",
