@@ -1,11 +1,12 @@
 import SectionHeader from "@/components/SectionHeader";
 
-const Resume = () => {
+const ResumeSection = () => {
   return (
     <div className="resume">
       <SectionHeader title="resume" />
+      <p>Resume content goes here.</p>
     </div>
   );
 };
 
-export default Resume;
+export default ResumeSection;

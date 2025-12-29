@@ -1,4 +1,4 @@
-import SectionHeader from "@/components/SectionHeader";
+import { SectionHeader } from "@/components";
 import { generateParagraphs } from "@/utils";
 
 import "@/components/AboutSection/AboutSection.scss";
@@ -15,7 +15,7 @@ const AboutText = {
 
 const AboutSection = () => {
   return (
-    <div className="about">
+    <section className="about" id="about">
       <img
         className="about__image"
         src="/images/me.jpg"
@@ -24,7 +24,7 @@ const AboutSection = () => {
       <SectionHeader title={AboutText.title} />
 
       {generateParagraphs({ paragraphs: AboutText.paragraphs })}
-    </div>
+    </section>
   );
 };
 

@@ -1,0 +1,24 @@
+@use "@/styles/partials/colours" as *;
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+            color: $mint-leaf;
+        }
+    }
+}

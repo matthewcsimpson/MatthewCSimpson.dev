@@ -4,7 +4,7 @@ import {
   Container,
   Footer,
   ProjectsSection,
-  Resume,
+  ResumeSection,
   SkillsSection,
 } from "@/components";
 
@@ -12,7 +12,7 @@ const mainSections = [
   { id: "about", label: "About", render: () => <About /> },
   { id: "projects", label: "Projects", render: () => <ProjectsSection /> },
   { id: "skills", label: "Skills", render: () => <SkillsSection /> },
-  { id: "resume", label: "Resume", render: () => <Resume /> },
+  { id: "resume", label: "Resume", render: () => <ResumeSection /> },
 ];
 
 /**

@@ -1,8 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 
-import { Container } from "@/components";
+import { Container, TagList } from "@/components";
 import { projectsData } from "@/data";
-import TagList from "@/components/TagList";
 
 import "@/pages/ProjectPage/ProjectPage.scss";
 

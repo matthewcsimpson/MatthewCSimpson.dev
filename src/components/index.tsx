@@ -8,7 +8,7 @@ export { default as Navigation } from "@/components/Navigation";
 export { default as Project } from "@/components/Project";
 export { default as ProjectsList } from "@/components/ProjectsList";
 export { default as ProjectsSection } from "@/components/ProjectsSection";
-export { default as Resume } from "@/components/Resume";
+export { default as ResumeSection } from "@/components/ResumeSection";
 export { default as SectionHeader } from "@/components/SectionHeader";
 export { default as SkillIcon } from "@/components/SkillIcon";
 export { default as SkillsSection } from "@/components/SkillsSection";
