@@ -4,11 +4,10 @@
 .container {
     display: flex;
     flex-direction: column;
-
     width: 100%;
     overflow: hidden;
+    background-color: $evergreen;
 
-    gap: 0rem;
     @include tablet {
         flex-direction: row;
         height: 100vh;
@@ -18,32 +17,41 @@
     .right {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
         width: 100%;
-        background-color: $evergreen;
-
-        @include tablet {
-            gap: 2rem;
-        }
     }
 
     .left {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        gap: 1.5rem;
+        justify-content: flex-start;
         align-items: center;
         padding: 1rem;
 
         @include tablet {
             width: 45%;
             height: 100vh;
-            margin: 0 0 2rem 0;
             padding: 2rem;
+        }
+
+        &__menu {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 0.5rem;
+        }
+
+        &__content {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
         }
     }
 
     .right {
-        width: 100%;
+        gap: 2rem;
         background-color: $dark-emerald;
 
         @include tablet {

@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { MainPage, ProjectDetails } from "@/pages";
+import { MainPage, ProjectPage } from "@/pages";
 
 import "@/styles/main.scss";
 
@@ -10,7 +10,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/project/:projectId" element={<ProjectDetails />} />
+      <Route path="/project/:projectId" element={<ProjectPage />} />
     </Routes>
   </BrowserRouter>
 );

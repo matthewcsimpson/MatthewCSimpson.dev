@@ -3,10 +3,17 @@ import {
   Banner,
   Container,
   Footer,
-  Projects,
+  ProjectsSection,
   Resume,
-  Skills,
+  SkillsSection,
 } from "@/components";
+
+const mainSections = [
+  { id: "about", label: "About", render: () => <About /> },
+  { id: "projects", label: "Projects", render: () => <ProjectsSection /> },
+  { id: "skills", label: "Skills", render: () => <SkillsSection /> },
+  { id: "resume", label: "Resume", render: () => <Resume /> },
+];
 
 /**
  * App component that serves as the main container for the application.
@@ -18,10 +25,11 @@ const MainPage = () => {
       leftChildren={<Banner />}
       rightChildren={
         <>
-          <About />
-          <Projects />
-          <Skills />
-          <Resume />
+          {mainSections.map(({ id, render }) => (
+            <section id={id} key={id} className="main-section">
+              {render()}
+            </section>
+          ))}
           <Footer />
         </>
       }

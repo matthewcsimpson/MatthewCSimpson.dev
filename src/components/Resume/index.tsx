@@ -1,4 +1,4 @@
-import { SectionHeader } from "@/ui";
+import SectionHeader from "@/components/SectionHeader";
 
 const Resume = () => {
   return (

@@ -1,4 +1,4 @@
-import { LinksList } from "@/ui";
+import LinksList from "@/components/LinksList";
 
 import "@/components/Banner/Banner.scss";
 

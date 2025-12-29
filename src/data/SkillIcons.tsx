@@ -9,6 +9,7 @@ export const skillicons: Icons[] = [
   { label: "Javascript", iconClass: "javascript", text: "" },
   { label: "Typescript", iconClass: "typescript", text: "" },
   { label: "Reactjs", iconClass: "reactjs", text: "" },
+  { label: "React Router", iconClass: "reactrouter", text: "" },
   { label: "Nextjs", iconClass: "nextjs", text: "" },
   { label: "Vitejs", iconClass: "vitejs", text: "" },
   { label: "Materialui", iconClass: "materialui", text: "" },

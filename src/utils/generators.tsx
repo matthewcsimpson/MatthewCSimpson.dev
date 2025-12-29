@@ -1,4 +1,7 @@
-import { LinkIcon, Project, SkillIcon, Tag } from "@/ui";
+import LinkIcon from "@/components/LinkIcon";
+import Project from "@/components/Project";
+import SkillIcon from "@/components/SkillIcon";
+import Tag from "@/components/Tag";
 import type { Icons, ProjectData, TagType } from "@/types";
 
 interface GenerateLinksProps {
