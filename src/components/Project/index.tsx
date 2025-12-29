@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import type { ProjectData } from "@/types";
 import { ProjectDetailsModal, TagList } from "@/components";
@@ -18,6 +18,16 @@ const Project = ({
   const handleOpenModal = () => {
     setShowModal((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (!showModal) return;
+
+    const original = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = original;
+    };
+  }, [showModal]);
 
   return (
     <>
