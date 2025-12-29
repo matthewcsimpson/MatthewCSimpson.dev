@@ -8,6 +8,7 @@ $dark-emerald: #2d6a4f;
 $deep-forest: #1a4d2e;
 $evergreen: #081c15;
 $black: #010906;
+$background: rgba(1, 9, 6, 0.5);
 
 // Map
 $colors: (
@@ -19,5 +20,6 @@ $colors: (
     "dark-emerald": $dark-emerald,
     "deep-forest": $deep-forest,
     "evergreen": $evergreen,
-    "black": $black
+    "black": $black,
+    "background": $background
 );

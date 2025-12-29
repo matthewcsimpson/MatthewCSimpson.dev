@@ -1,30 +1,32 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
-import type { TagType } from "@/types";
+import type { ProjectData } from "@/types";
+import { ProjectDetailsModal, TagList } from "@/components";
 
 import "@/components/Project/Project.scss";
-import TagList from "@/components/TagList";
-
-interface ProjectProps {
-  id: string;
-  title: string;
-  group: string;
-  imageSrc: string;
-  description: string;
-  tags: TagType[];
-}
 
 const Project = ({
   id,
   title,
+  description,
   group,
   imageSrc,
-  description,
   tags,
-}: ProjectProps) => {
+}: ProjectData) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal((prev) => !prev);
+  };
+
   return (
     <>
-      <div className="project">
+      <div
+        className="project"
+        onClick={handleOpenModal}
+        role="button"
+        tabIndex={0}
+      >
         <h4 className="project__title">
           {group ? "I worked on" : "I made"}{" "}
           <span className="project__title--highlight">{title}</span>
@@ -39,12 +41,22 @@ const Project = ({
           <img className="project__image" src={imageSrc} alt={title} />
         </div>
         <TagList tags={tags} />
-        <Link className="project__overlay" to={`/project/${id}`}>
+        <div
+          className="project__overlay"
+          aria-label={`View more about ${title}`}
+        >
           <h2 className="project__overlay-text">
             Would You Like To Know More?
           </h2>
-        </Link>
+        </div>
       </div>
+      {showModal && (
+        <ProjectDetailsModal
+          id={id}
+          show={showModal}
+          onClose={handleOpenModal}
+        />
+      )}
     </>
   );
 };

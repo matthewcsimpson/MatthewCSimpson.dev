@@ -18,7 +18,7 @@ export type ProjectData = {
   id: string;
   title: string;
   description: string;
-  longDescription?: string;
+  longDescription?: string[];
   group: string;
   imageSrc: string;
   githubType: GithubType;

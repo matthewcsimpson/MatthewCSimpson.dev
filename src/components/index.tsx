@@ -6,6 +6,7 @@ export { default as LinkIcon } from "@/components/LinkIcon";
 export { default as LinksList } from "@/components/LinksList";
 export { default as Navigation } from "@/components/Navigation";
 export { default as Project } from "@/components/Project";
+export { default as ProjectDetailsModal } from "@/components/ProjectDetailsModal";
 export { default as ProjectsList } from "@/components/ProjectsList";
 export { default as ProjectsSection } from "@/components/ProjectsSection";
 export { default as ResumeSection } from "@/components/ResumeSection";

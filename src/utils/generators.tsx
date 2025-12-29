@@ -46,17 +46,7 @@ const generateParagraphs = ({ paragraphs }: generateParagraphsProps) => {
  * @returns
  */
 const generateProjects = (projects: ProjectData[]) => {
-  return projects.map(({ id, title, group, imageSrc, description, tags }) => (
-    <Project
-      key={id}
-      id={id}
-      title={title}
-      group={group}
-      imageSrc={imageSrc}
-      description={description}
-      tags={tags}
-    />
-  ));
+  return projects.map((project) => <Project key={project.id} {...project} />);
 };
 
 /**

@@ -46,7 +46,7 @@ export const projectsData: ProjectData[] = [
     githubType: "case-study",
     githubLink:
       "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report",
-    liveLink: "",
+    liveLink: "https://app.ocean.org/app/whales",
     tags: [
       { name: "HTML", type: "language" },
       { name: "TypeScript", type: "language" },
