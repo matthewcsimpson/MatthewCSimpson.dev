@@ -6,12 +6,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.5rem;
     width: 4rem;
+    height: 5rem;
 
     position: relative;
     cursor: help;
+
+    border-radius: 0.5rem;
 
     &__link {
         display: inline-block;
@@ -21,6 +24,7 @@
     &__label {
         font-size: 0.75rem;
         padding: 0;
+        text-align: center;
     }
 
     &__icon {
@@ -35,138 +39,5 @@
         &:hover {
             opacity: 0.8;
         }
-    }
-
-    // Infrastructure
-    &__icon--auth0 {
-        background-image: url("/icons/auth0.svg");
-    }
-
-    &__icon--azure {
-        background-image: url("/icons/azure.svg");
-    }
-
-    &__icon--git {
-        background-image: url("/icons/git.svg");
-    }
-
-    &__icon--github {
-        background-image: url("/icons/github.svg");
-    }
-
-    &__icon--heroku {
-        background-image: url("/icons/heroku.svg");
-    }
-
-    &__icon--vercel {
-        background-image: url("/icons/vercel.svg");
-    }
-
-    &__icon--npm {
-        background-image: url("/icons/npm.svg");
-    }
-
-    // Front End
-    &__icon--html {
-        background-image: url("/icons/html.svg");
-    }
-
-    &__icon--css3 {
-        background-image: url("/icons/css3.svg");
-    }
-
-    &__icon--sass {
-        background-image: url("/icons/sass.svg");
-    }
-
-    &__icon--less {
-        background-image: url("/icons/less.svg");
-    }
-
-    &__icon--tailwind {
-        background-image: url("/icons/tailwind.svg");
-    }
-
-    &__icon--javascript {
-        background-image: url("/icons/javascript.svg");
-    }
-
-    &__icon--typescript {
-        background-image: url("/icons/typescript.svg");
-    }
-
-    &__icon--reactjs {
-        background-image: url("/icons/reactjs.svg");
-    }
-
-    &__icon--nextjs {
-        background-image: url("/icons/nextjs.svg");
-    }
-
-    &__icon--vitejs {
-        background-image: url("/icons/vitejs.svg");
-    }
-
-    &__icon--materialui {
-        background-image: url("/icons/materialui.svg");
-    }
-
-    &__icon--radixui {
-        background-image: url("/icons/radixui.svg");
-    }
-
-    &__icon--redux {
-        background-image: url("/icons/redux.svg");
-    }
-
-    &__icon--jest {
-        background-image: url("/icons/jest.svg");
-    }
-
-    // Back End
-    &__icon--nodejs {
-        background-image: url("/icons/nodejs.svg");
-    }
-
-    &__icon--nestjs {
-        background-image: url("/icons/nestjs.svg");
-    }
-
-    &__icon--java {
-        background-image: url("/icons/java.svg");
-    }
-    &__icon--graphql {
-        background-image: url("/icons/graphql.svg");
-    }
-
-    &__icon--mysql {
-        background-image: url("/icons/mysql.svg");
-    }
-
-    &__icon--postgresql {
-        background-image: url("/icons/postgresql.svg");
-    }
-
-    &__icon--prisma {
-        background-image: url("/icons/prisma.svg");
-    }
-
-    &__icon--json {
-        background-image: url("/icons/json.svg");
-    }
-    &__icon--express {
-        background-image: url("/icons/express.svg");
-    }
-    &__icon--swagger {
-        background-image: url("/icons/swagger.svg");
-    }
-    &__icon--bash {
-        background-image: url("/icons/bash.svg");
-    }
-    &__icon--cloudflare {
-        background-image: url("/icons/cloudflare.svg");
-    }
-    &__icon--reactrouter {
-        background-image: url("/icons/reactrouter.svg");
     }
 }

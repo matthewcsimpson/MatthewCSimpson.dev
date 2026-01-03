@@ -13,7 +13,7 @@ const Tag = ({ text, type }: TagProps) => {
       {type !== "owner" && (
         <img
           className="tag__icon"
-          src={`/icons/${text.toLowerCase()}.svg`}
+          src={`/icons/${text.replace(/\s+/g, "").toLowerCase()}.svg`}
           alt={`${type} icon`}
         />
       )}

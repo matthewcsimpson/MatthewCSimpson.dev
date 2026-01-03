@@ -5,14 +5,36 @@ export type Icons = {
   link?: string;
 };
 
-type TagKind = "language" | "framework" | "owner" | "default";
+export const TAG_TYPES = {
+  LANGUAGE: "language",
+  FRAMEWORK: "framework",
+  OWNER: "owner",
+  DEFAULT: "default",
+} as const;
+
+type TagKind = (typeof TAG_TYPES)[keyof typeof TAG_TYPES];
 
 export type TagType = {
   name: string;
   type: TagKind;
 };
 
-export type GithubType = "repository" | "case-study";
+export type TagsType = {
+  [key: string]: TagType;
+};
+
+export const LINK_TYPES = {
+  REPOSITORY: "repository",
+  CASE_STUDY: "case-study",
+  LIVE: "live",
+} as const;
+
+export type ProjectLinkKind = (typeof LINK_TYPES)[keyof typeof LINK_TYPES];
+
+export type ProjectLink = {
+  type: ProjectLinkKind;
+  link: string;
+};
 
 export type ProjectData = {
   id: string;
@@ -21,8 +43,6 @@ export type ProjectData = {
   longDescription?: string[];
   group: string;
   imageSrc: string;
-  githubType: GithubType;
-  githubLink: string;
-  liveLink: string;
+  links: ProjectLink[];
   tags: TagType[];
 };

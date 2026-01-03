@@ -11,9 +11,6 @@ const Navigation = () => {
   return (
     <nav aria-label="Site sections">
       <ul className="navigation">
-        <li className="navigation__item navigation__item--brand">
-          <span className="navigation__name">Matthew Simpson</span>
-        </li>
         {navLinks.map(({ href, label }) => (
           <li key={href} className="navigation__item">
             <a className="navigation__link" href={href}>
