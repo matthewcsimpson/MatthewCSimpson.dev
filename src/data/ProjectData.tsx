@@ -59,6 +59,7 @@ export const projectsData: ProjectData[] = [
     group: "Skyrocket Digital",
     imageSrc: "/images/whale-admin-home.png",
     description: "A web app to administer the Whale Report System.",
+    longDescription: [],
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
@@ -94,6 +95,7 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/whale-report-home.png",
     description:
       "A web app for mariners to report and be alerted to whale sightings.",
+    longDescription: [],
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
@@ -159,6 +161,7 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/rulesofacquisition-home.png",
     description:
       "A RESTful API providing access to the Ferengi Rules of Acquisition from Star Trek.",
+    longDescription: [],
     links: [
       {
         type: LINK_TYPES.LIVE,
@@ -188,6 +191,7 @@ export const projectsData: ProjectData[] = [
     group: "Stack Five",
     imageSrc: "/images/code4rena-home.png",
     description: "A platform for decentralized security audits.",
+    longDescription: [],
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
@@ -218,6 +222,7 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/york1-desktop-home.png",
     description:
       "A platform to for construction and industrial clients to rent waste management equipment.",
+    longDescription: [],
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
@@ -246,6 +251,7 @@ export const projectsData: ProjectData[] = [
     group: "",
     imageSrc: "/images/casting-recall-home.png",
     description: "A movie guessing game.",
+    longDescription: [],
     links: [
       {
         type: LINK_TYPES.LIVE,
