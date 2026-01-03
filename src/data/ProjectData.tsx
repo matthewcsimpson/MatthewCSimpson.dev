@@ -11,6 +11,7 @@ export const projectsData: ProjectData[] = [
       "A Chrome extension that suppresses the AI-generated content in Google Search results.",
     longDescription: [
       "De-AI Google is a Chrome extension designed to enhance your search experience by suppressing AI-generated content in Google Search results. Despite how powerful lage language models are, they are still only a statistics engine, and when attempting to summarize search results they can produce incorrect information. De-AI Google helps you avoid this by removing AI-generated summaries and snippets from your search results, allowing you to focus on human-generated content that is more likely to be accurate and reliable.",
+      "The extension works by simply apending the '-ai' keyword to any Google search you make within chrome. This includes both from google.com and from the search/url bar. ",
     ],
     links: [
       {
@@ -162,7 +163,7 @@ export const projectsData: ProjectData[] = [
       {
         type: LINK_TYPES.LIVE,
         text: "View Live API",
-        link: "https://ferengi-rules-api.vercel.app/api/rules",
+        link: "https://rulesofacquisition.herokuapp.com",
       },
       {
         type: LINK_TYPES.REPOSITORY,

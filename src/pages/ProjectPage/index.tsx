@@ -27,14 +27,15 @@ const ProjectPage = () => {
 
   return (
     <Container
-      leftChildren={<ProjectBanner name={title} description={description} />}
+      leftChildren={
+        <ProjectBanner name={title} links={links} description={description} />
+      }
       rightChildren={
         <ProjectDetails
           title={title}
           description={description}
           longDescription={longDescription}
           imageSrc={imageSrc}
-          links={links}
           tags={tags}
         />
       }
