@@ -1,9 +1,7 @@
-import LinkIcon from "@/components/LinkIcon";
-import Project from "@/components/Project";
-import SkillIcon from "@/components/SkillIcon";
-import Tag from "@/components/Tag";
+import { PersonalLink, Project, SkillIcon, Tag } from "@/components";
 import type { Icons, ProjectData, TagType } from "@/types";
 
+// Types
 interface GenerateLinksProps {
   icons: Icons[];
 }
@@ -16,14 +14,16 @@ interface GenerateSkillsProps {
   icons: Icons[];
 }
 
+// Functions
+
 /**
  * Generates a list of LinkIcon components based on the provided icons.
  * @param icons - An array of icon objects containing label, iconClass, and link.
  * @returns
  */
-const generateLinks = ({ icons }: GenerateLinksProps) => {
+const generatePersonalLinks = ({ icons }: GenerateLinksProps) => {
   return icons.map(({ label, iconClass, link }) => (
-    <LinkIcon key={label} label={label} iconClass={iconClass} link={link} />
+    <PersonalLink key={label} label={label} iconClass={iconClass} link={link} />
   ));
 };
 
@@ -76,7 +76,7 @@ const generateTags = (tags: TagType[]) => {
 };
 
 export {
-  generateLinks,
+  generatePersonalLinks,
   generateParagraphs,
   generateProjects,
   generateSkills,

@@ -33,6 +33,7 @@ export type ProjectLinkKind = (typeof LINK_TYPES)[keyof typeof LINK_TYPES];
 
 export type ProjectLink = {
   type: ProjectLinkKind;
+  text: string;
   link: string;
 };
 

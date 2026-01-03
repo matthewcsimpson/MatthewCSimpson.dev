@@ -1,6 +1,6 @@
 @use "@/styles/partials/colours" as *;
 
-.LinkIcon {
+.PersonalLink {
     &__listItem {
         margin: 0;
         padding: 0;
@@ -32,27 +32,27 @@
     }
 
     &__icon--github {
-        -webkit-mask-image: url("/icons/github.svg");
-        mask-image: url("/icons/github.svg");
+        -webkit-mask-image: url("/icons/personal/github.svg");
+        mask-image: url("/icons/personal/github.svg");
     }
 
     &__icon--linkedin {
-        -webkit-mask-image: url("/icons/linkedin.svg");
-        mask-image: url("/icons/linkedin.svg");
+        -webkit-mask-image: url("/icons/personal/linkedin.svg");
+        mask-image: url("/icons/personal/linkedin.svg");
     }
 
     &__icon--codepen {
-        -webkit-mask-image: url("/icons/codepen.svg");
-        mask-image: url("/icons/codepen.svg");
+        -webkit-mask-image: url("/icons/personal/codepen.svg");
+        mask-image: url("/icons/personal/codepen.svg");
     }
 
     &__icon--medium {
-        -webkit-mask-image: url("/icons/medium.svg");
-        mask-image: url("/icons/medium.svg");
+        -webkit-mask-image: url("/icons/personal/medium.svg");
+        mask-image: url("/icons/personal/medium.svg");
     }
 
     &__icon--devto {
-        -webkit-mask-image: url("/icons/devto.svg");
-        mask-image: url("/icons/devto.svg");
+        -webkit-mask-image: url("/icons/personal/devto.svg");
+        mask-image: url("/icons/personal/devto.svg");
     }
 }

@@ -14,12 +14,14 @@ export const projectsData: ProjectData[] = [
     ],
     links: [
       {
-        type: LINK_TYPES.REPOSITORY,
-        link: "https://github.com/matthewcsimpson/De-AI-Google",
+        type: LINK_TYPES.LIVE,
+        text: "View in Chrome Web Store",
+        link: "https://chromewebstore.google.com/detail/de-ai-google/nkcedogblnkemelngcggpglflocghmfh?pli=1",
       },
       {
-        type: LINK_TYPES.LIVE,
-        link: "https://chromewebstore.google.com/detail/de-ai-google/nkcedogblnkemelngcggpglflocghmfh?pli=1",
+        type: LINK_TYPES.REPOSITORY,
+        text: "View on GitHub",
+        link: "https://github.com/matthewcsimpson/De-AI-Google",
       },
     ],
     tags: [TAGS.JAVASCRIPT, TAGS.BASH, TAGS.CHROME, TAGS.GIT, TAGS.GITHUB],
@@ -33,12 +35,19 @@ export const projectsData: ProjectData[] = [
       "An NPM library to convert between various coordinate systems used in geospatial applications.",
     links: [
       {
-        type: LINK_TYPES.REPOSITORY,
-        link: "https://github.com/matthewcsimpson/CoordConversions",
+        type: LINK_TYPES.LIVE,
+        text: "View on NPM",
+        link: "https://www.npmjs.com/package/coordconversion",
       },
       {
         type: LINK_TYPES.LIVE,
-        link: "https://coordconversion.app",
+        text: "View demo",
+        link: "https://codepen.io/matthewcsimpson/full/RNrYdXv",
+      },
+      {
+        type: LINK_TYPES.REPOSITORY,
+        text: "View on GitHub",
+        link: "https://github.com/matthewcsimpson/CoordConversions",
       },
     ],
     tags: [TAGS.TYPESCRIPT, TAGS.JEST, TAGS.NPM, TAGS.GIT, TAGS.GITHUB],
@@ -52,7 +61,13 @@ export const projectsData: ProjectData[] = [
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
+        text: "Read Case Study",
         link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report-Admin",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        text: "View Live Project",
+        link: "https://app.ocean.org/app/whales-admin",
       },
     ],
     tags: [
@@ -81,10 +96,12 @@ export const projectsData: ProjectData[] = [
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
+        text: "Read Case Study",
         link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report",
       },
       {
         type: LINK_TYPES.LIVE,
+        text: "View Live Project",
         link: "https://app.ocean.org/app/whales",
       },
     ],
@@ -143,12 +160,14 @@ export const projectsData: ProjectData[] = [
       "A RESTful API providing access to the Ferengi Rules of Acquisition from Star Trek.",
     links: [
       {
-        type: LINK_TYPES.REPOSITORY,
-        link: "https://github.com/matthewcsimpson/Rules-of-Acquisition-API",
+        type: LINK_TYPES.LIVE,
+        text: "View Live API",
+        link: "https://ferengi-rules-api.vercel.app/api/rules",
       },
       {
-        type: LINK_TYPES.LIVE,
-        link: "https://ferengi-rules-api.vercel.app/api/rules",
+        type: LINK_TYPES.REPOSITORY,
+        text: "View on GitHub",
+        link: "https://github.com/matthewcsimpson/Rules-of-Acquisition-API",
       },
     ],
     tags: [
@@ -171,10 +190,12 @@ export const projectsData: ProjectData[] = [
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
+        text: "Read Case Study",
         link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Code4rena-Platform",
       },
       {
         type: LINK_TYPES.LIVE,
+        text: "View Live Project",
         link: "https://code4rena.com/",
       },
     ],
@@ -199,10 +220,12 @@ export const projectsData: ProjectData[] = [
     links: [
       {
         type: LINK_TYPES.CASE_STUDY,
+        text: "Read Case Study",
         link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/tree/main/York1",
       },
       {
         type: LINK_TYPES.LIVE,
+        text: "View Live Project",
         link: "https://wms.york1.com/OnlineBin/TempServiceSiteAddress.aspx",
       },
     ],
@@ -224,12 +247,19 @@ export const projectsData: ProjectData[] = [
     description: "A movie guessing game.",
     links: [
       {
+        type: LINK_TYPES.LIVE,
+        text: "CastingRecall.com",
+        link: "https://castingrecall.com",
+      },
+      {
         type: LINK_TYPES.REPOSITORY,
+        text: "View Frontend Repository",
         link: "https://github.com/matthewcsimpson/CastingRecall-Frontend",
       },
       {
-        type: LINK_TYPES.LIVE,
-        link: "https://castingrecall.com",
+        type: LINK_TYPES.REPOSITORY,
+        text: "View Backend Repository",
+        link: "https://github.com/matthewcsimpson/CastingRecall-Backend",
       },
     ],
     tags: [
@@ -240,6 +270,9 @@ export const projectsData: ProjectData[] = [
       TAGS.HTML,
       TAGS.CSS3,
       TAGS.SASS,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.POSTGRESQL,
       TAGS.GOOGLE_ANALYTICS,
       TAGS.GIT,
       TAGS.GITHUB,

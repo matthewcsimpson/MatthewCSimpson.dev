@@ -1,21 +1,38 @@
+import { Link, useLocation } from "react-router-dom";
+
 import "@/components/Navigation/Navigation.scss";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#resume", label: "Resume" },
+  { id: "about", label: "About" },
+  { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "resume", label: "Resume" },
 ];
 
 const Navigation = () => {
+  const location = useLocation();
+
+  console.log("location.pathname:", location.pathname);
+
+  const pathCheck = location.pathname === "/";
+  console.log("pathCheck:", pathCheck);
+
   return (
-    <nav aria-label="Site sections">
+    <nav aria-label="Site Sections">
       <ul className="navigation">
-        {navLinks.map(({ href, label }) => (
-          <li key={href} className="navigation__item">
-            <a className="navigation__link" href={href}>
+        {!pathCheck && (
+          <li className="navigation__item">
+            <Link to="/" className="navigation__link">{`<Back`}</Link>{" "}
+          </li>
+        )}
+        {navLinks.map(({ id, label }) => (
+          <li key={id} className="navigation__item">
+            <Link
+              className="navigation__link"
+              to={{ pathname: "/", hash: `#${id}` }}
+            >
               {label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

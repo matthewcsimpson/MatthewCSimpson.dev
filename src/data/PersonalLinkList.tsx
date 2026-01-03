@@ -1,6 +1,6 @@
 import type { Icons } from "@/types";
 
-export const linkicons: Icons[] = [
+export const PersonalLinkList: Icons[] = [
   {
     label: "GitHub",
     iconClass: "github",
