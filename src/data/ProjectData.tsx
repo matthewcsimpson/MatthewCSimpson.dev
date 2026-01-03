@@ -1,4 +1,5 @@
-import type { ProjectData } from "@/types";
+import { LINK_TYPES, type ProjectData } from "@/types";
+import { TAGS } from "@/data/TagConstants";
 
 export const projectsData: ProjectData[] = [
   {
@@ -8,16 +9,17 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/de-ai-google-home.png",
     description:
       "A Chrome extension that suppresses the AI-generated content in Google Search results.",
-    githubType: "repository",
-    githubLink: "https://github.com/matthewcsimpson/De-AI-Google",
-    liveLink:
-      "https://chromewebstore.google.com/detail/de-ai-google/nkcedogblnkemelngcggpglflocghmfh?pli=1",
-    tags: [
-      { name: "JavaScript", type: "language" },
-      { name: "Bash", type: "language" },
-      { name: "Chrome", type: "language" },
-      { name: "GitHub", type: "default" },
+    links: [
+      {
+        type: LINK_TYPES.REPOSITORY,
+        link: "https://github.com/matthewcsimpson/De-AI-Google",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        link: "https://chromewebstore.google.com/detail/de-ai-google/nkcedogblnkemelngcggpglflocghmfh?pli=1",
+      },
     ],
+    tags: [TAGS.JAVASCRIPT, TAGS.BASH, TAGS.CHROME, TAGS.GIT, TAGS.GITHUB],
   },
   {
     id: "coordconversion",
@@ -26,14 +28,44 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/coordconversion-home.png",
     description:
       "An NPM library to convert between various coordinate systems used in geospatial applications.",
-    githubType: "repository",
-    githubLink: "https://github.com/matthewcsimpson/CoordConversions",
-    liveLink: "https://coordconversion.app",
+    links: [
+      {
+        type: LINK_TYPES.REPOSITORY,
+        link: "https://github.com/matthewcsimpson/CoordConversions",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        link: "https://coordconversion.app",
+      },
+    ],
+    tags: [TAGS.TYPESCRIPT, TAGS.JEST, TAGS.NPM, TAGS.GIT, TAGS.GITHUB],
+  },
+  {
+    id: "whale-report-administration",
+    title: "Whale Report Administration",
+    group: "Skyrocket Digital",
+    imageSrc: "/images/whale-admin-home.png",
+    description: "A web app to administer the Whale Report System.",
+    links: [
+      {
+        type: LINK_TYPES.CASE_STUDY,
+        link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report-Admin",
+      },
+    ],
     tags: [
-      { name: "TypeScript", type: "language" },
-      { name: "Jest", type: "language" },
-      { name: "npm", type: "language" },
-      { name: "GitHub", type: "default" },
+      TAGS.HTML,
+      TAGS.TYPESCRIPT,
+      TAGS.CSS3,
+      TAGS.SASS,
+      TAGS.REACT,
+      TAGS.NEXT,
+      TAGS.REDUX_TOOLKIT,
+      TAGS.AUTH0,
+      TAGS.SALESFORCE,
+      TAGS.SWAGGER,
+      TAGS.AZURE,
+      TAGS.GIT,
+      TAGS.GITHUB,
     ],
   },
   {
@@ -43,46 +75,62 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/whale-report-home.png",
     description:
       "A web app for mariners to report and be alerted to whale sightings.",
-    githubType: "case-study",
-    githubLink:
-      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report",
-    liveLink: "https://app.ocean.org/app/whales",
+    links: [
+      {
+        type: LINK_TYPES.CASE_STUDY,
+        link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        link: "https://app.ocean.org/app/whales",
+      },
+    ],
     tags: [
-      { name: "HTML", type: "language" },
-      { name: "TypeScript", type: "language" },
-      { name: "CSS3", type: "language" },
-      { name: "Sass", type: "framework" },
-      { name: "ReactJS", type: "framework" },
-      { name: "NextJS", type: "framework" },
-      { name: "Auth0", type: "framework" },
-      { name: "Swagger", type: "framework" },
-      { name: "Azure", type: "default" },
-      { name: "GitHub", type: "default" },
+      TAGS.HTML,
+      TAGS.TYPESCRIPT,
+      TAGS.CSS3,
+      TAGS.SASS,
+      TAGS.REACT,
+      TAGS.NEXT,
+      TAGS.REDUX_TOOLKIT,
+      TAGS.JEST,
+      TAGS.AUTH0,
+      TAGS.SALESFORCE,
+      TAGS.SWAGGER,
+      TAGS.AZURE,
+      TAGS.GOOGLE_ANALYTICS,
+      TAGS.GIT,
+      TAGS.GITHUB,
     ],
   },
-  {
-    id: "whale-report-administration",
-    title: "Whale Report Administration",
-    group: "Skyrocket Digital",
-    imageSrc: "/images/whale-admin-home.png",
-    description: "A web app to administer the Whale Report System.",
-    githubType: "case-study",
-    githubLink:
-      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Ocean-Wise-Whale-Report-Admin",
-    liveLink: "",
-    tags: [
-      { name: "HTML", type: "language" },
-      { name: "TypeScript", type: "language" },
-      { name: "CSS3", type: "language" },
-      { name: "Sass", type: "framework" },
-      { name: "ReactJS", type: "framework" },
-      { name: "NextJS", type: "framework" },
-      { name: "Auth0", type: "framework" },
-      { name: "Swagger", type: "framework" },
-      { name: "Azure", type: "default" },
-      { name: "GitHub", type: "default" },
-    ],
-  },
+  // {
+  //   id: "shoreline-cleanup",
+  //   title: "Shoreline Cleanup",
+  //   group: "Skyrocket Digital",
+  //   imageSrc: "/images/shoreline-home.png",
+  //   description:
+  //     "A web app for volunteers to organize and report events to clean shorelines.",
+  //   links: [
+  //     {
+  //       type: LINK_TYPES.LIVE,
+  //       link: "https://app.ocean.org/app/cleanup",
+  //     },
+  //   ],
+  //   tags: [
+  //     TAGS.HTML,
+  //     TAGS.TYPESCRIPT,
+  //     TAGS.CSS3,
+  //     TAGS.SASS,
+  //     TAGS.REACT,
+  //     TAGS.NEXT,
+  //     TAGS.AUTH0,
+  //     TAGS.SALESFORCE,
+  //     TAGS.SWAGGER,
+  //     TAGS.AZURE,
+  //     TAGS.GIT,
+  //     TAGS.GITHUB,
+  //   ],
+  // },
   {
     id: "ferengi-rules-of-acquisition-api",
     title: "Ferengi Rules of Acquisition API",
@@ -90,16 +138,25 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/rulesofacquisition-home.png",
     description:
       "A RESTful API providing access to the Ferengi Rules of Acquisition from Star Trek.",
-    githubType: "repository",
-    githubLink: "https://github.com/matthewcsimpson/Rules-of-Acquisition-API",
-    liveLink: "https://ferengi-rules-api.vercel.app/api/rules",
+    links: [
+      {
+        type: LINK_TYPES.REPOSITORY,
+        link: "https://github.com/matthewcsimpson/Rules-of-Acquisition-API",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        link: "https://ferengi-rules-api.vercel.app/api/rules",
+      },
+    ],
     tags: [
-      { name: "JavaScript", type: "language" },
-      { name: "NodeJS", type: "framework" },
-      { name: "ExpressJS", type: "framework" },
-      { name: "Swagger", type: "framework" },
-      { name: "Heroku", type: "default" },
-      { name: "GitHub", type: "default" },
+      TAGS.JAVASCRIPT,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.MYSQL,
+      TAGS.SWAGGER,
+      TAGS.HEROKU,
+      TAGS.GIT,
+      TAGS.GITHUB,
     ],
   },
   {
@@ -108,19 +165,25 @@ export const projectsData: ProjectData[] = [
     group: "Stack Five",
     imageSrc: "/images/code4rena-home.png",
     description: "A platform for decentralized security audits.",
-    githubType: "case-study",
-    githubLink:
-      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Code4rena-Platform",
-    liveLink: "https://code4rena.com/",
+    links: [
+      {
+        type: LINK_TYPES.CASE_STUDY,
+        link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/blob/main/Code4rena-Platform",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        link: "https://code4rena.com/",
+      },
+    ],
     tags: [
-      { name: "HTML", type: "language" },
-      { name: "TypeScript", type: "language" },
-      { name: "CSS3", type: "language" },
-      { name: "ReactJS", type: "framework" },
-      { name: "NextJS", type: "framework" },
-      { name: "Sass", type: "framework" },
-      { name: "Vercel", type: "default" },
-      { name: "GitHub", type: "default" },
+      TAGS.HTML,
+      TAGS.TYPESCRIPT,
+      TAGS.CSS3,
+      TAGS.REACT,
+      TAGS.NEXT,
+      TAGS.SASS,
+      TAGS.VERCEL,
+      TAGS.GITHUB,
     ],
   },
   {
@@ -130,16 +193,53 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/york1-desktop-home.png",
     description:
       "A platform to for construction and industrial clients to rent waste management equipment.",
-    githubType: "case-study",
-    githubLink:
-      "https://github.com/matthewcsimpson/Client-Work-Case-Studies/tree/main/York1",
-    liveLink: "https://wms.york1.com/OnlineBin/TempServiceSiteAddress.aspx",
+    links: [
+      {
+        type: LINK_TYPES.CASE_STUDY,
+        link: "https://github.com/matthewcsimpson/Client-Work-Case-Studies/tree/main/York1",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        link: "https://wms.york1.com/OnlineBin/TempServiceSiteAddress.aspx",
+      },
+    ],
     tags: [
-      { name: "HTML", type: "language" },
-      { name: "JavaScript", type: "language" },
-      { name: "CSS3", type: "language" },
-      { name: "Sass", type: "framework" },
-      { name: "GitHub", type: "default" },
+      TAGS.HTML,
+      TAGS.JAVASCRIPT,
+      TAGS.CSHARP,
+      TAGS.CSS3,
+      TAGS.SASS,
+      TAGS.GIT,
+      TAGS.GITHUB,
+    ],
+  },
+  {
+    id: "casting-recall",
+    title: "Casting ReCall",
+    group: "",
+    imageSrc: "/images/casting-recall-home.png",
+    description: "A movie guessing game.",
+    links: [
+      {
+        type: LINK_TYPES.REPOSITORY,
+        link: "https://github.com/matthewcsimpson/CastingRecall-Frontend",
+      },
+      {
+        type: LINK_TYPES.LIVE,
+        link: "https://castingrecall.com",
+      },
+    ],
+    tags: [
+      TAGS.JAVASCRIPT,
+      TAGS.REACT,
+      TAGS.REACT_ROUTER,
+      TAGS.AXIOS,
+      TAGS.HTML,
+      TAGS.CSS3,
+      TAGS.SASS,
+      TAGS.GOOGLE_ANALYTICS,
+      TAGS.GIT,
+      TAGS.GITHUB,
     ],
   },
 ];

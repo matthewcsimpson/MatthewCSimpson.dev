@@ -1,7 +1,3 @@
-import { useState } from "react";
-
-import ToolTip from "@/components/ToolTip";
-
 import "@/components/SkillIcon/SkillIcon.scss";
 
 interface SkillIconProps {
@@ -10,24 +6,16 @@ interface SkillIconProps {
   iconClass: string;
 }
 
-const SkillIcon = ({ label, text, iconClass }: SkillIconProps) => {
-  const [showToolTip, setShowToolTip] = useState(false);
-
-  const handleSetShowToolTip = () => {
-    setShowToolTip((prev) => !prev);
-  };
-
+const SkillIcon = ({ label, iconClass }: SkillIconProps) => {
   return (
-    <li
-      className="skillicon"
-      onMouseOver={handleSetShowToolTip}
-      onMouseOut={handleSetShowToolTip}
-    >
-      <span
-        className={`skillicon__icon skillicon__icon--${iconClass}`}
-        aria-hidden="true"
+    <li className="skillicon">
+      <img
+        className="skillicon__icon"
+        src={`/icons/${iconClass.replace(/\s+/g, "").toLowerCase()}.svg`}
+        alt={`${iconClass} icon`}
       />
-      <ToolTip title={label} text={text} show={showToolTip} />
+      <p className="skillicon__label">{label}</p>
+      {/* <ToolTip title={label} text={text} show={showToolTip} /> */}
     </li>
   );
 };

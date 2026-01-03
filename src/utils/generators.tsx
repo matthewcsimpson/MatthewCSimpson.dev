@@ -55,8 +55,8 @@ const generateProjects = (projects: ProjectData[]) => {
  * @returns
  */
 const generateSkills = ({ icons }: GenerateSkillsProps) => {
-  return icons.map(({ label, text, iconClass }) => (
-    <SkillIcon key={label} text={text} label={label} iconClass={iconClass} />
+  return icons.map(({ label, iconClass }) => (
+    <SkillIcon key={label} label={label} iconClass={iconClass} />
   ));
 };
 

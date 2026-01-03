@@ -49,16 +49,16 @@ const Project = ({
         <p className="project__description">{description}</p>
         <div className="project__imagecontainer">
           <img className="project__image" src={imageSrc} alt={title} />
+          <div
+            className="project__overlay"
+            aria-label={`View more about ${title}`}
+          >
+            <h2 className="project__overlay-text">
+              Would You Like To Know More?
+            </h2>
+          </div>
         </div>
         <TagList tags={tags} />
-        <div
-          className="project__overlay"
-          aria-label={`View more about ${title}`}
-        >
-          <h2 className="project__overlay-text">
-            Would You Like To Know More?
-          </h2>
-        </div>
       </div>
       {showModal && (
         <ProjectDetailsModal
