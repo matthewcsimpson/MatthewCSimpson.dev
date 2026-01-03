@@ -9,6 +9,9 @@ export const projectsData: ProjectData[] = [
     imageSrc: "/images/de-ai-google-home.png",
     description:
       "A Chrome extension that suppresses the AI-generated content in Google Search results.",
+    longDescription: [
+      "De-AI Google is a Chrome extension designed to enhance your search experience by suppressing AI-generated content in Google Search results. Despite how powerful lage language models are, they are still only a statistics engine, and when attempting to summarize search results they can produce incorrect information. De-AI Google helps you avoid this by removing AI-generated summaries and snippets from your search results, allowing you to focus on human-generated content that is more likely to be accurate and reliable.",
+    ],
     links: [
       {
         type: LINK_TYPES.REPOSITORY,
