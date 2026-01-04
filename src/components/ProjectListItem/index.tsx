@@ -49,7 +49,7 @@ const ProjectListItem = ({
           </h2>
         </Link>
       </div>
-      <TagList tags={tags} />
+      <TagList tags={tags} align="center" />
     </div>
   );
 };

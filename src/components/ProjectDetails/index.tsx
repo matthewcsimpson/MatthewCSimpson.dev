@@ -1,11 +1,14 @@
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 import type { ProjectData } from "@/types";
-import { Footer, TagList } from "@/components";
+import { Footer } from "@/components";
 
 import "@/components/ProjectDetails/ProjectDetails.scss";
 
 type ProjectDetailsProps = Pick<
   ProjectData,
-  "title" | "description" | "longDescription" | "imageSrc" | "tags"
+  "title" | "description" | "longDescription" | "imageSrc"
 >;
 
 const ProjectDetails = ({
@@ -13,9 +16,11 @@ const ProjectDetails = ({
   description,
   longDescription,
   imageSrc,
-  tags,
 }: ProjectDetailsProps) => {
-  const paragraphs = longDescription ?? [description];
+  const contentSections =
+    longDescription && longDescription.length > 0
+      ? longDescription
+      : [description];
 
   return (
     <section className="projectDetails" aria-labelledby="project-content">
@@ -26,17 +31,11 @@ const ProjectDetails = ({
       </div>
       <div className="projectDetails__section">
         <img src={imageSrc} alt={title} className="projectDetails__image" />
-        {paragraphs.map((paragraph, index) => (
-          <p key={index} className="projectDetails__paragraph">
-            {paragraph}
-          </p>
+        {contentSections.map((section, index) => (
+          <div className="projectDetails__mdwrapper" key={index}>
+            <Markdown remarkPlugins={[remarkGfm]}>{section}</Markdown>
+          </div>
         ))}
-      </div>
-      <div className="projectDetails__section">
-        <h3 id="technologies" className="projectDetails__sectionHeading">
-          Technologies Used
-        </h3>
-        <TagList tags={tags} />
       </div>
 
       <Footer />
