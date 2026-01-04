@@ -1,0 +1,51 @@
+@use "@/styles/partials/colours" as *;
+
+.ResumeExperience {
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        padding: 1rem;
+        border-bottom: 1px dotted $black;
+
+        &:last-child {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__sectiontitle {
+        font-size: 1.25rem;
+        font-weight: 700;
+        padding: 0 1rem;
+    }
+
+    &__company {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__location {
+        font-style: italic;
+    }
+
+    &__title {
+        padding-left: 1rem;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    &__dates {
+        font-weight: 500;
+        font-size: 0.875rem;
+        font-style: italic;
+    }
+
+    &__description-list {
+        list-style: disc;
+        padding: 0 2rem;
+        margin-top: 0.5rem;
+    }
+}

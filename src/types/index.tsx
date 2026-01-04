@@ -47,3 +47,29 @@ export type ProjectData = {
   links: ProjectLink[];
   tags: TagType[];
 };
+
+export type EducationItem = {
+  institution: string;
+  credential: string;
+  field: string;
+  endDate: string;
+  location: string;
+};
+
+export type WorkExperiencePosition = {
+  title: string;
+  startDate: string;
+  endDate: string;
+};
+
+export type WorkExperienceItem = {
+  positions: WorkExperiencePosition[];
+  company: string;
+  location: string;
+  description: string[];
+};
+
+export type ResumeData = {
+  education: EducationItem[];
+  workExperience: WorkExperienceItem[];
+};

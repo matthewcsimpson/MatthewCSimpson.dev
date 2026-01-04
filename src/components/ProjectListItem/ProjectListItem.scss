@@ -67,7 +67,8 @@
         padding: 0 1rem;
     }
 
-    &:hover &__overlay {
+    &__imagecontainer:hover &__overlay,
+    &__overlay:focus-visible {
         opacity: 1;
     }
 }

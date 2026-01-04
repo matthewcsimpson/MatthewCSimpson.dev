@@ -14,31 +14,43 @@ const ProjectListItem = ({
   tags,
 }: ProjectData) => {
   return (
-    <Link className="ProjectListItem" to={`/project/${id}`}>
+    <div className="ProjectListItem">
       <h4 className="ProjectListItem__title" id={id}>
         {group ? "I worked on" : "I made"}{" "}
-        <span className="ProjectListItem__title--highlight">{title}</span>
+        <Link
+          to={`/project/${id}`}
+          aria-label={`View more about ${title}`}
+          className="ProjectListItem__title--highlight"
+        >
+          {title}
+        </Link>
       </h4>
       {group && (
         <h4 className="ProjectListItem__title ProjectListItem__title--group">
           with{" "}
-          <span className="ProjectListItem__title--highlight">{group}</span>
+          <a
+            href={`#${group.replace(/\s+/g, "-").toLowerCase()}`}
+            className="ProjectListItem__title--highlight"
+          >
+            {group}
+          </a>
         </h4>
       )}
       <p className="ProjectListItem__description">{description}</p>
       <div className="ProjectListItem__imagecontainer">
         <img className="ProjectListItem__image" src={imageSrc} alt={title} />
-        <div
+        <Link
           className="ProjectListItem__overlay"
+          to={`/project/${id}`}
           aria-label={`View more about ${title}`}
         >
           <h2 className="ProjectListItem__overlay-text">
             Would You Like To Know More?
           </h2>
-        </div>
+        </Link>
       </div>
       <TagList tags={tags} />
-    </Link>
+    </div>
   );
 };
 

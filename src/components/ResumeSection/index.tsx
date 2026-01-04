@@ -1,10 +1,15 @@
-import SectionHeader from "@/components/SectionHeader";
+import { ResumeEducation, ResumeExperience, SectionHeader } from "@/components";
+
+import "@/components/ResumeSection/ResumeSection.scss";
+
+import { Resume } from "@/data";
 
 const ResumeSection = () => {
   return (
-    <div className="resume">
+    <div className="ResumeSection">
       <SectionHeader title="resume" />
-      <p>Resume content goes here.</p>
+      <ResumeExperience experience={Resume.workExperience} />
+      <ResumeEducation education={Resume.education} />
     </div>
   );
 };
