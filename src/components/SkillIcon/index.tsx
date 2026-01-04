@@ -8,13 +8,13 @@ interface SkillIconProps {
 
 const SkillIcon = ({ label, iconClass }: SkillIconProps) => {
   return (
-    <li className="skillicon">
+    <li className="skillIcon">
       <img
-        className="skillicon__icon"
+        className="skillIcon__icon"
         src={`/icons/${iconClass.replace(/\s+/g, "").toLowerCase()}.svg`}
         alt={`${iconClass} icon`}
       />
-      <p className="skillicon__label">{label}</p>
+      <p className="skillIcon__label">{label}</p>
       {/* <ToolTip title={label} text={text} show={showToolTip} /> */}
     </li>
   );

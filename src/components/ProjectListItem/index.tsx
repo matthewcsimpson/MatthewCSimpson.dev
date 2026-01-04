@@ -14,37 +14,37 @@ const ProjectListItem = ({
   tags,
 }: ProjectData) => {
   return (
-    <div className="ProjectListItem">
-      <h4 className="ProjectListItem__title" id={id}>
+    <div className="projectListItem">
+      <h4 className="projectListItem__title" id={id}>
         {group ? "I worked on" : "I made"}{" "}
         <Link
           to={`/project/${id}`}
           aria-label={`View more about ${title}`}
-          className="ProjectListItem__title--highlight"
+          className="projectListItem__title--highlight"
         >
           {title}
         </Link>
       </h4>
       {group && (
-        <h4 className="ProjectListItem__title ProjectListItem__title--group">
+        <h4 className="projectListItem__title projectListItem__title--group">
           with{" "}
           <a
             href={`#${group.replace(/\s+/g, "-").toLowerCase()}`}
-            className="ProjectListItem__title--highlight"
+            className="projectListItem__title--highlight"
           >
             {group}
           </a>
         </h4>
       )}
-      <p className="ProjectListItem__description">{description}</p>
-      <div className="ProjectListItem__imagecontainer">
-        <img className="ProjectListItem__image" src={imageSrc} alt={title} />
+      <p className="projectListItem__description">{description}</p>
+      <div className="projectListItem__imageContainer">
+        <img className="projectListItem__image" src={imageSrc} alt={title} />
         <Link
-          className="ProjectListItem__overlay"
+          className="projectListItem__overlay"
           to={`/project/${id}`}
           aria-label={`View more about ${title}`}
         >
-          <h2 className="ProjectListItem__overlay-text">
+          <h2 className="projectListItem__overlayText">
             Would You Like To Know More?
           </h2>
         </Link>

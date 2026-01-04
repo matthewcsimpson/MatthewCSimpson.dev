@@ -15,16 +15,16 @@ interface PersonalLinkProps {
  */
 const PersonalLink = ({ label, iconClass, link }: PersonalLinkProps) => {
   return (
-    <li className="PersonalLink__listItem">
+    <li className="personalLink__listItem">
       <a
-        className="PersonalLink__link"
+        className="personalLink__link"
         aria-label={label}
         href={link}
         target="_blank"
         rel="noopener noreferrer"
       >
         <span
-          className={`PersonalLink__icon PersonalLink__icon--${iconClass}`}
+          className={`personalLink__icon personalLink__icon--${iconClass}`}
           aria-hidden="true"
         />
       </a>

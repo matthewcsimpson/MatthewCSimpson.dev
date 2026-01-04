@@ -6,24 +6,24 @@ import { Resume } from "@/data";
 
 const ResumeSection = () => {
   return (
-    <div className="ResumeSection">
+    <div className="resumeSection">
       <SectionHeader title="resume" />
-      <div className="ResumeSection__cta">
+      <div className="resumeSection__cta">
         <a
-          className="ResumeSection__button ResumeSection__button--resume"
+          className="resumeSection__button resumeSection__button--resume"
           href="/resume/MatthewSimpsonResume.pdf"
           download
         >
           &darr; Download Resume
         </a>
         <a
-          className="ResumeSection__button ResumeSection__button--linkedin"
+          className="resumeSection__button resumeSection__button--linkedin"
           href="https://www.linkedin.com/in/matthewcsimpson/"
           target="_blank"
           rel="noreferrer noopener"
         >
           <img
-            className="ResumeSection__buttonicon"
+            className="resumeSection__buttonIcon"
             src="/icons/external-link.svg"
             alt="External link icon"
           />{" "}

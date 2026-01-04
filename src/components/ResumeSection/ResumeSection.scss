@@ -1,7 +1,7 @@
 @use "@/styles/partials/colours" as *;
 @use "@/styles/partials/utilities";
 
-.ResumeSection {
+.resumeSection {
     padding: 1rem 0;
 
     &__cta {
@@ -13,7 +13,7 @@
         margin: 1rem 0 2rem;
     }
 
-    &__buttonicon {
+    &__buttonIcon {
         width: 1.25rem;
         height: 1.25rem;
         fill: currentColor;

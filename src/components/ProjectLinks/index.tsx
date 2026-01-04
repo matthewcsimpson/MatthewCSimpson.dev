@@ -10,12 +10,12 @@ interface ProjectLinksProps {
 
 const ProjectLinks = ({ links }: ProjectLinksProps) => {
   return (
-    <div className="ProjectLinks" aria-label="Project Links">
-      <ul className="ProjectLinks__list">
+    <div className="projectLinks" aria-label="Project Links">
+      <ul className="projectLinks__list">
         {links.map((link) => (
           <li
             key={`${link.type}-${link.link}`}
-            className={`ProjectLinks__listItem ProjectLinks__listItem--${link.type}`}
+            className={`projectLinks__listItem projectLinks__listItem--${link.type}`}
           >
             {generateLinkText(link)}
           </li>

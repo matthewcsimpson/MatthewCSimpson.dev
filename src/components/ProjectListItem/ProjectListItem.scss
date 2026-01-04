@@ -1,6 +1,6 @@
 @use "@/styles/partials/colours" as *;
 
-.ProjectListItem {
+.projectListItem {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +32,7 @@
         text-align: center;
     }
 
-    &__imagecontainer {
+    &__imageContainer {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,13 +61,13 @@
         text-decoration: none;
     }
 
-    &__overlay-text {
+    &__overlayText {
         margin: 0;
         text-align: center;
         padding: 0 1rem;
     }
 
-    &__imagecontainer:hover &__overlay,
+    &__imageContainer:hover &__overlay,
     &__overlay:focus-visible {
         opacity: 1;
     }

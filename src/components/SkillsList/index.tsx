@@ -8,8 +8,8 @@ import "@/components/SkillsList/SkillsList.scss";
  */
 const SkillsList = () => {
   return (
-    <div className="skillslist">
-      <ul className="skillslist__list">
+    <div className="skillsList">
+      <ul className="skillsList__list">
         {generateSkills({ icons: skillicons })}
       </ul>
     </div>

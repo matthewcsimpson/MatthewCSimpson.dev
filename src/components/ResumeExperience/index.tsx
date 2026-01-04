@@ -8,34 +8,31 @@ interface ResumeExperienceProps {
 
 const ResumeExperience = ({ experience }: ResumeExperienceProps) => {
   return (
-    <div className="ResumeExperience__content">
-      <h3 className="ResumeExperience__sectiontitle">Work Experience</h3>
+    <div className="resumeExperience__content">
+      <h3 className="resumeExperience__sectionTitle">Work Experience</h3>
       {experience.map((work: WorkExperienceItem, index) => (
-        <div key={index} className="ResumeExperience__item">
+        <div key={index} className="resumeExperience__item">
           <p
-            className="ResumeExperience__company"
+            className="resumeExperience__company"
             id={work.company.replace(/\s+/g, "-").toLowerCase()}
           >
             {work.company} &mdash;{" "}
-            <span className="ResumeExperience__location">{work.location}</span>
+            <span className="resumeExperience__location">{work.location}</span>
           </p>
-          <div className="ResumeExperience__positions">
+          <div className="resumeExperience__positions">
             {work.positions.map((position, positionIndex) => (
-              <p key={positionIndex} className="ResumeExperience__title">
+              <p key={positionIndex} className="resumeExperience__title">
                 {position.title},{" "}
-                <span className="ResumeExperience__dates">
+                <span className="resumeExperience__dates">
                   {position.startDate} &mdash; {position.endDate}
                 </span>
               </p>
             ))}
           </div>
 
-          <ul className="ResumeExperience__description-list">
+          <ul className="resumeExperience__descriptionList">
             {work.description.map((desc, descIndex) => (
-              <li
-                key={descIndex}
-                className="ResumeExperience__description-item"
-              >
+              <li key={descIndex} className="resumeExperience__descriptionItem">
                 {desc}
               </li>
             ))}
