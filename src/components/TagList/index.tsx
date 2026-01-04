@@ -9,7 +9,7 @@ interface TagListProps {
   align?: "center" | "left";
 }
 
-const TagList = ({ tags, align }: TagListProps) => {
+const TagList = ({ tags, align = "center" }: TagListProps) => {
   return (
     <div className={`tagList tagList--${align}`}>{generateTags(tags)}</div>
   );

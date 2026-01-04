@@ -33,9 +33,7 @@ const ProjectDetails = ({
         <img src={imageSrc} alt={title} className="projectDetails__image" />
         {contentSections.map((section, index) => (
           <div className="projectDetails__mdwrapper" key={index}>
-            <Markdown key={index} remarkPlugins={[remarkGfm]}>
-              {section}
-            </Markdown>
+            <Markdown remarkPlugins={[remarkGfm]}>{section}</Markdown>
           </div>
         ))}
       </div>

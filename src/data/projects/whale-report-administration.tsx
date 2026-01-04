@@ -6,6 +6,7 @@ export const whaleReportAdministrationProject = [
   `### Challenges & Post Launch
 
 The primary challenge for this admin panel is the specificity. This application has few users, but those users require a high level of detail as well as a fine level of control over what they are doing. The smallest of changes has a large impact, and I worked closely with the stakeholders to make sure that their feedback was heard and applied quickly and carefully.`,
+
   `The Whale Report Administration panel has been live for several months now and is actively being used by Ocean Wise staff to manage whale sightings. The feedback has been positive, and the system is helping Ocean Wise to better manage and protect whale populations.`,
   `
 Please see the case study for more details and screenshots. 

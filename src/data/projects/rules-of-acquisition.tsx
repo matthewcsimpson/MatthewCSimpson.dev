@@ -20,7 +20,6 @@ Returns the full list of rules as an array of objects in JSON format.
 
 \`\`\`http
 GET /rules
-
 \`\`\`
 
 ### Response:
@@ -89,6 +88,7 @@ GET /rule/:rule_id
   - \`episode_date\` is the original airdate for the episode the specified rule appeared in, in the format "1993-05-02T00:00:00.000Z"
 
 Note: Returns 404 if a rule number that does not exist is specified.`,
+
   `### Get a list of the "revised" edition rules.
 
 Returns the full list of 'revised edition' rules as created by Grand Nagus Zek under the influence of the Bajoran Prophets.
@@ -97,7 +97,6 @@ Returns the full list of 'revised edition' rules as created by Grand Nagus Zek u
 
 \`\`\`http
 GET /rules/revised
-
 \`\`\`
 
 ### Response
@@ -164,6 +163,7 @@ GET /rule/:rule_id/revised
   - \`episode_date\` is the original airdate for the episode the specified rule appeared in, in the format "1993-05-02T00:00:00.000Z".
 
 Note: Returns 404 if a rule number that does not exist is specified.`,
+
   `### Get a list of all Star Trek episodes in which rules appear
 
 Returns the full list of episodes as an array of objects in JSON format.
@@ -256,7 +256,7 @@ Series codes:
   - \`series_name\` - the name of the series this episode is in
   - \`episode_season\` is the season this episode was in.
   - \`episode_number\` is the episode number in the season that this episode appeared in.
-  - \`episode_date\` is the original airdate for the episode in the format 1993-05-02T00:00:00.000Z".
+  - \`episode_date\` is the original airdate for the episode in the format "1993-05-02T00:00:00.000Z".
   - \`episode_synopsis\` is a brief description of the episode.
 - \`episode_rules\` is an array of the rules that appeared in this episode
   - \`rule_number\` is the in-universe rule number and database ID.
