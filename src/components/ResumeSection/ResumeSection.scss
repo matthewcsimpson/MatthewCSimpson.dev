@@ -1,5 +1,33 @@
 @use "@/styles/partials/colours" as *;
+@use "@/styles/partials/utilities";
 
 .ResumeSection {
     padding: 1rem 0;
+
+    &__cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem 0 2rem;
+    }
+
+    &__buttonicon {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: currentColor;
+        filter: invert(1) brightness(2);
+    }
+
+    &__button {
+        @extend .u-button;
+        background-color: $deep-forest;
+        color: $frosted-mint;
+
+        &:hover,
+        &:focus {
+            background-color: $evergreen;
+        }
+    }
 }
