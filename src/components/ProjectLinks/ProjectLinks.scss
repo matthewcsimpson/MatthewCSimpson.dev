@@ -1,7 +1,8 @@
 @use "@/styles/partials/colours" as *;
 @use "@/styles/partials/mixins" as *;
+@use "@/styles/partials/utilities";
 
-.ProjectLinks {
+.projectLinks {
     padding: 0;
     width: 100%;
     font-size: 0.75rem;
@@ -23,22 +24,21 @@
     }
 
     &__listItem {
-        background-color: $deep-forest;
         width: fit-content;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
     }
 
     &__link {
-        display: flex;
+        @include utilities.button($text-transform: capitalize);
         gap: 0.25rem;
-        align-items: center;
-        justify-content: center;
-        text-transform: capitalize;
+        font-size: 0.75rem;
         text-decoration: none;
-        font-weight: 600;
-        cursor: pointer;
         color: $white;
+        background-color: $deep-forest;
+
+        &:hover,
+        &:focus {
+            background-color: $evergreen;
+        }
     }
 
     &__icon {

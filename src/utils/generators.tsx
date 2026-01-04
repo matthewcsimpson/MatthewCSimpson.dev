@@ -83,13 +83,13 @@ const generateLinkText = (link: ProjectLink) => {
       href={link.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="ProjectLinks__link"
+      className="projectLinks__link"
     >
       {link.text}
       <img
         src={"/icons/external-link.svg"}
         alt={link.text}
-        className="ProjectLinks__icon"
+        className="projectLinks__icon"
         aria-hidden="true"
       />
     </a>

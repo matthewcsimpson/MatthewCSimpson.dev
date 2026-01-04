@@ -1,0 +1,35 @@
+@use "@/styles/partials/colours" as *;
+
+.resumeEducation {
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        padding: 1rem;
+        border-bottom: 1px dotted $black;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 1.125rem;
+        font-weight: 600;
+        padding-left: 1rem;
+    }
+
+    &__location {
+        font-style: italic;
+    }
+
+    &__date,
+    &__degree {
+        display: block;
+        font-size: 0.875rem;
+        padding: 0 1rem;
+    }
+}

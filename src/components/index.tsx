@@ -11,6 +11,8 @@ export { default as ProjectDetails } from "@/components/ProjectDetails";
 export { default as ProjectLinks } from "@/components/ProjectLinks";
 export { default as ProjectsList } from "@/components/ProjectsList";
 export { default as ProjectsSection } from "@/components/ProjectsSection";
+export { default as ResumeEducation } from "@/components/ResumeEducation";
+export { default as ResumeExperience } from "@/components/ResumeExperience";
 export { default as ResumeSection } from "@/components/ResumeSection";
 export { default as SectionHeader } from "@/components/SectionHeader";
 export { default as SkillIcon } from "@/components/SkillIcon";
