@@ -4,8 +4,15 @@ import { generateTags } from "@/utils";
 
 import "@/components/TagList/TagList.scss";
 
-const TagList = ({ tags }: { tags: TagType[] }) => {
-  return <div className="tagList">{generateTags(tags)}</div>;
+interface TagListProps {
+  tags: TagType[];
+  align?: "center" | "left";
+}
+
+const TagList = ({ tags, align }: TagListProps) => {
+  return (
+    <div className={`tagList tagList--${align}`}>{generateTags(tags)}</div>
+  );
 };
 
 export default TagList;

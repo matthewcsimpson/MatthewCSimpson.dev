@@ -2,7 +2,13 @@
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     margin-top: 1rem;
+
+    &--center {
+        justify-content: center;
+    }
+    &--left {
+        justify-content: flex-start;
+    }
 }
