@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import {
   About,
   Banner,
@@ -20,6 +23,17 @@ const mainSections = [
  * @returns
  */
 const MainPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) {
+      return;
+    }
+
+    const target = document.getElementById(location.hash.slice(1));
+    target?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [location.hash]);
+
   return (
     <Container
       leftChildren={<Banner />}

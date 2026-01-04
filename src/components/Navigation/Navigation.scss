@@ -1,10 +1,15 @@
 @use "@/styles/partials/colours" as *;
+@use "@/styles/partials/mixins" as *;
 
 .navigation {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.75rem;
 
     &__item {
         display: flex;
@@ -13,6 +18,10 @@
 
         &--brand {
             margin-right: auto;
+        }
+
+        &--hidden {
+            visibility: hidden;
         }
     }
 

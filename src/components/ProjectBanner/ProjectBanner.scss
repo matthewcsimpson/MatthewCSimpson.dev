@@ -1,7 +1,6 @@
-@use "@/styles/partials/colours" as *;
 @use "@/styles/partials/mixins" as *;
 
-.banner {
+.ProjectBanner {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,12 +20,7 @@
         word-break: break-word;
     }
 
-    &__title {
-        word-break: break-word;
-        font-size: 1.5rem;
-    }
-
-    &__tagline {
+    &__description {
         word-break: break-word;
     }
 }

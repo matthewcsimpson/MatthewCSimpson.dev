@@ -1,6 +1,6 @@
-import "@/components/LinkIcon/LinkIcon.scss";
+import "@/components/PersonalLink/PersonalLink.scss";
 
-interface LinkIconProps {
+interface PersonalLinkProps {
   label: string;
   iconClass: string;
   link?: string;
@@ -13,18 +13,18 @@ interface LinkIconProps {
  * @param link - The URL the icon links to.
  * @returns
  */
-const LinkIcon = ({ label, iconClass, link }: LinkIconProps) => {
+const PersonalLink = ({ label, iconClass, link }: PersonalLinkProps) => {
   return (
-    <li className="LinkIcon__listItem">
+    <li className="PersonalLink__listItem">
       <a
-        className="LinkIcon__link"
+        className="PersonalLink__link"
         aria-label={label}
         href={link}
         target="_blank"
         rel="noopener noreferrer"
       >
         <span
-          className={`LinkIcon__icon LinkIcon__icon--${iconClass}`}
+          className={`PersonalLink__icon PersonalLink__icon--${iconClass}`}
           aria-hidden="true"
         />
       </a>
@@ -32,4 +32,4 @@ const LinkIcon = ({ label, iconClass, link }: LinkIconProps) => {
   );
 };
 
-export default LinkIcon;
+export default PersonalLink;

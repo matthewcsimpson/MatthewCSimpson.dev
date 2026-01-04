@@ -1,4 +1,4 @@
-import { LinksList } from "@/components";
+import { PersonalLinks } from "@/components";
 
 import "@/components/Banner/Banner.scss";
 
@@ -21,7 +21,7 @@ const Banner = () => {
           <h2 className="banner__title">{BannerText.title}</h2>
           <p className="banner__tagline">{BannerText.tagline}</p>
         </div>
-        <LinksList />
+        <PersonalLinks />
       </div>
     </>
   );
