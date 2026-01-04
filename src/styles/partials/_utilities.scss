@@ -1,6 +1,6 @@
 @use "@/styles/partials/colours" as *;
 
-.u-button {
+@mixin button($text-transform: uppercase) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
     border: 0.5px solid $mint-leaf;
     border-radius: 0.5rem;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: $text-transform;
     letter-spacing: 0.05em;
     text-decoration: none;
     background-color: transparent;
@@ -32,4 +32,8 @@
         outline: 2px solid $mint-leaf;
         outline-offset: 3px;
     }
+}
+
+.u-button {
+    @include button();
 }

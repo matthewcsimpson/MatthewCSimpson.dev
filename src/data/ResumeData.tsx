@@ -74,7 +74,7 @@ export const Resume: ResumeData = {
       company: "BrainStation",
       location: "Vancouver, BC",
       description: [
-        "Instructed 20+ students in full- and part-time Web Development and Software Developmentdiploma programs",
+        "Instructed 20+ students in full- and part-time Web Development and Software Development diploma programs",
         "Focused on JavaScript (ES6), React, Node, and Express",
       ],
     },
@@ -86,14 +86,14 @@ export const Resume: ResumeData = {
           endDate: "Feb 2023",
         },
         {
-          title: "Department Manager, Computer + audio Video",
+          title: "Department Manager, Computer + Audio Video",
           startDate: "Nov 2009",
           endDate: "Feb 2020",
         },
         {
           title: "Assistant Department Manager",
-          startDate: "Nov 2009",
-          endDate: "May 2008",
+          startDate: "May 2008",
+          endDate: "Nov 2009",
         },
       ],
       company: "London Drugs Limited",

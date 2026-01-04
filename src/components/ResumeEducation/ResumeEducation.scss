@@ -22,6 +22,10 @@
         padding-left: 1rem;
     }
 
+    &__location {
+        font-style: italic;
+    }
+
     &__date,
     &__degree {
         display: block;

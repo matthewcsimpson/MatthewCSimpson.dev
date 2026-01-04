@@ -21,7 +21,7 @@
     }
 
     &__button {
-        @extend .u-button;
+        @include utilities.button();
         background-color: $deep-forest;
         color: $frosted-mint;
 

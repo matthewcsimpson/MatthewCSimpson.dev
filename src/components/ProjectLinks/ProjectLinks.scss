@@ -28,10 +28,9 @@
     }
 
     &__link {
-        @extend .u-button;
+        @include utilities.button($text-transform: capitalize);
         gap: 0.25rem;
         font-size: 0.75rem;
-        text-transform: capitalize;
         text-decoration: none;
         color: $white;
         background-color: $deep-forest;

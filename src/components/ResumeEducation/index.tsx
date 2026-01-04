@@ -12,7 +12,10 @@ const ResumeEducation = ({ education }: ResumeEducationProps) => {
       <h3 className="resumeEducation__title">Education</h3>
       {education.map((edu: EducationItem, index) => (
         <div key={index} className="resumeEducation__item">
-          <h4 className="resumeEducation__institution">{edu.institution}</h4>
+          <h4 className="resumeEducation__institution">
+            {edu.institution} &mdash;{" "}
+            <span className="resumeEducation__location">{edu.location}</span>
+          </h4>
           <p className="resumeEducation__degree">
             {edu.credential} &mdash; {edu.field}
           </p>

@@ -25,7 +25,7 @@ const ResumeSection = () => {
           <img
             className="resumeSection__buttonIcon"
             src="/icons/external-link.svg"
-            alt="External link icon"
+            alt=""
           />{" "}
           View LinkedIn
         </a>
