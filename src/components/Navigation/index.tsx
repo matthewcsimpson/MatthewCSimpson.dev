@@ -11,11 +11,7 @@ const navLinks = [
 
 const Navigation = () => {
   const location = useLocation();
-
-  console.log("location.pathname:", location.pathname);
-
   const pathCheck = location.pathname === "/";
-  console.log("pathCheck:", pathCheck);
 
   return (
     <nav aria-label="Site Sections">
@@ -25,7 +21,9 @@ const Navigation = () => {
             pathCheck ? "navigation__item--hidden" : ""
           }`}
         >
-          <Link to="/" className="navigation__link">{`<Back`}</Link>{" "}
+          <Link to="/" className="navigation__link">
+            &larr; Back
+          </Link>{" "}
         </li>
 
         {navLinks.map(({ id, label }) => (
@@ -45,7 +43,7 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Check
+            Spacer
           </a>
         </li>
       </ul>

@@ -5,7 +5,7 @@ import "@/components/PersonalLinks/PersonalLinks.scss";
 
 /**
  * Links component that renders a list of links.
- * @returns
+ * @returns JSX markup containing an unordered list of PersonalLink components.
  */
 const PersonalLinks = () => {
   return (

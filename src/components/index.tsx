@@ -5,7 +5,7 @@ export { default as Footer } from "@/components/Footer";
 export { default as PersonalLink } from "@/components/PersonalLink";
 export { default as PersonalLinks } from "@/components/PersonalLinks";
 export { default as Navigation } from "@/components/Navigation";
-export { default as Project } from "@/components/Project";
+export { default as ProjectListItem } from "@/components/ProjectListItem";
 export { default as ProjectBanner } from "@/components/ProjectBanner";
 export { default as ProjectDetails } from "@/components/ProjectDetails";
 export { default as ProjectLinks } from "@/components/ProjectLinks";

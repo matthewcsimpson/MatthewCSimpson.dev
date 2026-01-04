@@ -1,5 +1,5 @@
-import { PersonalLink, Project, SkillIcon, Tag } from "@/components";
-import type { Icons, ProjectData, TagType } from "@/types";
+import { PersonalLink, ProjectListItem, SkillIcon, Tag } from "@/components";
+import type { Icons, ProjectData, ProjectLink, TagType } from "@/types";
 
 // Types
 interface GenerateLinksProps {
@@ -17,7 +17,7 @@ interface GenerateSkillsProps {
 // Functions
 
 /**
- * Generates a list of LinkIcon components based on the provided icons.
+ * Generates a list of PersonalLink components based on the provided icons.
  * @param icons - An array of icon objects containing label, iconClass, and link.
  * @returns
  */
@@ -46,7 +46,9 @@ const generateParagraphs = ({ paragraphs }: generateParagraphsProps) => {
  * @returns
  */
 const generateProjects = (projects: ProjectData[]) => {
-  return projects.map((project) => <Project key={project.id} {...project} />);
+  return projects.map((project) => (
+    <ProjectListItem key={project.id} {...project} />
+  ));
 };
 
 /**
@@ -75,7 +77,27 @@ const generateTags = (tags: TagType[]) => {
   );
 };
 
+const generateLinkText = (link: ProjectLink) => {
+  return (
+    <a
+      href={link.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="ProjectLinks__link"
+    >
+      {link.text}
+      <img
+        src={"/icons/external-link.svg"}
+        alt={link.text}
+        className="ProjectLinks__icon"
+        aria-hidden="true"
+      />
+    </a>
+  );
+};
+
 export {
+  generateLinkText,
   generatePersonalLinks,
   generateParagraphs,
   generateProjects,

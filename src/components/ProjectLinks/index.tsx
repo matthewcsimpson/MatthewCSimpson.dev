@@ -1,3 +1,5 @@
+import { generateLinkText } from "@/utils/generators";
+
 import { type ProjectLink } from "@/types";
 
 import "@/components/ProjectLinks/ProjectLinks.scss";
@@ -5,25 +7,6 @@ import "@/components/ProjectLinks/ProjectLinks.scss";
 interface ProjectLinksProps {
   links: ProjectLink[];
 }
-
-const generateLinkText = (link: ProjectLink) => {
-  return (
-    <a
-      href={link.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="ProjectLinks__link"
-    >
-      {link.text}
-      <img
-        src={"/icons/external-link.svg"}
-        alt=""
-        className="ProjectLinks__icon"
-        aria-hidden="true"
-      />
-    </a>
-  );
-};
 
 const ProjectLinks = ({ links }: ProjectLinksProps) => {
   return (

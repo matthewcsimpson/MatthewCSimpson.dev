@@ -13,7 +13,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/projects/:projectId" element={<ProjectPage />} />
+      <Route path="/project/:projectId" element={<ProjectPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </BrowserRouter>

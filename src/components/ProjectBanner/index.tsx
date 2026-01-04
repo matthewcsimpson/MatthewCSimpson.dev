@@ -11,10 +11,10 @@ interface ProjectBannerProps {
 
 const ProjectBanner = ({ description, links, name }: ProjectBannerProps) => {
   return (
-    <div className="projectDetails">
-      <div className="projectDetails__text">
-        <h1 className="projectDetails__name">{name}</h1>
-        <p className="projectDetails__description">{description}</p>
+    <div className="ProjectBanner">
+      <div className="ProjectBanner__text">
+        <h1 className="ProjectBanner__name">{name}</h1>
+        <p className="ProjectBanner__description">{description}</p>
       </div>
       <ProjectLinks links={links} />
     </div>
