@@ -62,6 +62,33 @@ export const projectsData: ProjectData[] = [
     tags: [TAGS.TYPESCRIPT, TAGS.JEST, TAGS.NPM, TAGS.GIT, TAGS.GITHUB],
   },
   {
+    id: "matthewcsimpson.dev",
+    title: "MatthewCSimpson.dev",
+    group: "",
+    imageSrc: "/images/matthewcsimpsondev.png",
+    description:
+      "My personal portfolio website.  This website, actually! Built with Vite, TypeScript, Sass, React Router, and Markdown .",
+    longDescription: [
+      "I realize it's a bit weird to put your own profile page on your profile page, but I wanted to highlight a project built using Vite, and I think the two column design worked out well.",
+    ],
+    links: [
+      {
+        type: LINK_TYPES.REPOSITORY,
+        text: "View on GitHub",
+        link: "https://github.com/matthewcsimpson/MatthewCSimpson.dev",
+      },
+    ],
+    tags: [
+      TAGS.VITE,
+      TAGS.TYPESCRIPT,
+      TAGS.SASS,
+      TAGS.REACT_ROUTER,
+      TAGS.MARKDOWN,
+      TAGS.GIT,
+      TAGS.GITHUB,
+    ],
+  },
+  {
     id: "whale-report-administration",
     title: "Whale Report Administration",
     group: "Skyrocket Digital",
@@ -287,8 +314,43 @@ export const projectsData: ProjectData[] = [
       TAGS.SASS,
       TAGS.NODE,
       TAGS.EXPRESS,
+      TAGS.HEROKU,
       TAGS.POSTGRESQL,
       TAGS.GOOGLE_ANALYTICS,
+      TAGS.GIT,
+      TAGS.GITHUB,
+    ],
+  },
+  {
+    id: "jasonipsum",
+    title: "Jason-Ipsum",
+    group: "",
+    imageSrc: "/images/jasonipsum.png",
+    description:
+      "A silly Ipsum generator using dialogue from your favourite Jason Momoa Characters.",
+    longDescription: [
+      "Jason-Ipsum is a fun take on the classic Lorem Ipsum text generator, but instead of random filler text, it uses memorable quotes and dialogue from various characters portrayed by Jason Momoa in film and television.",
+      "Whether you're a fan of Aquaman, Khal Drogo from Game of Thrones, or any of his other iconic roles, Jason-Ipsum provides a unique way to add some personality to your design mockups or placeholder content.",
+    ],
+    links: [
+      {
+        type: LINK_TYPES.LIVE,
+        text: "View Live Project",
+        link: "https://jason-ipsum.com",
+      },
+      {
+        type: LINK_TYPES.REPOSITORY,
+        text: "View on GitHub",
+        link: "https://github.com/matthewcsimpson/Jason-Ipsum",
+      },
+    ],
+    tags: [
+      TAGS.REACT,
+      TAGS.HTML,
+      TAGS.SASS,
+      TAGS.JAVASCRIPT,
+      TAGS.JSON,
+      TAGS.REACT_ROUTER,
       TAGS.GIT,
       TAGS.GITHUB,
     ],
