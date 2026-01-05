@@ -21,6 +21,7 @@ export const skillicons: Icons[] = [
   { label: "Jest", iconClass: "jest", text: "" },
   { label: "JSON", iconClass: "json", text: "" },
   { label: "Less", iconClass: "less", text: "" },
+  { label: "Markdown", iconClass: "markdown", text: "" },
   { label: "Material UI", iconClass: "materialui", text: "" },
   { label: "MySQL", iconClass: "mysql", text: "" },
   { label: "NestJS", iconClass: "nestjs", text: "" },

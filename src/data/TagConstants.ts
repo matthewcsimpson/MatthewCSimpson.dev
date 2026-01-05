@@ -24,6 +24,7 @@ export const TAGS: TagsType = {
   JSON: { name: "JSON", type: TAG_TYPES.LANGUAGE },
   LESS: { name: "Less", type: TAG_TYPES.FRAMEWORK },
   LINKEDIN: { name: "LinkedIn", type: TAG_TYPES.DEFAULT },
+  MARKDOWN: { name: "Markdown", type: TAG_TYPES.LANGUAGE },
   MATERIAL_UI: { name: "Material UI", type: TAG_TYPES.FRAMEWORK },
   MEDIUM: { name: "Medium", type: TAG_TYPES.DEFAULT },
   MYSQL: { name: "MySQL", type: TAG_TYPES.DEFAULT },
