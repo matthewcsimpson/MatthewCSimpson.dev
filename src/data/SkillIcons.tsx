@@ -40,5 +40,5 @@ export const skillicons: Icons[] = [
   { label: "Tailwind", iconClass: "tailwind", text: "" },
   { label: "TypeScript", iconClass: "typescript", text: "" },
   { label: "Vercel", iconClass: "vercel", text: "" },
-  { label: "Vite", iconClass: "vitejs", text: "" },
+  { label: "Vite", iconClass: "vite", text: "" },
 ];

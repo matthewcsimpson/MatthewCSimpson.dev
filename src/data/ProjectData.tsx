@@ -325,7 +325,7 @@ export const projectsData: ProjectData[] = [
     id: "jasonipsum",
     title: "Jason-Ipsum",
     group: "",
-    imageSrc: "/images/jasonipsum.png",
+    imageSrc: "/images/jason-ipsum.png",
     description:
       "A silly Ipsum generator using dialogue from your favourite Jason Momoa Characters.",
     longDescription: [
