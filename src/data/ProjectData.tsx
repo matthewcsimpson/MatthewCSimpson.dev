@@ -5,6 +5,7 @@ import {
   code4renaProject,
   coordConversionProject,
   deAIGoogleProject,
+  justWatchWidgetsProject,
   rulesOfAcquisitionProject,
   whaleReportProject,
   whaleReportAdministrationProject,
@@ -12,6 +13,36 @@ import {
 } from "@/data/projects";
 
 export const projectsData: ProjectData[] = [
+  {
+    id: "justwatch-widgets",
+    title: "JustWatch Widgets",
+    group: "",
+    imageSrc: "/images/justwatch-widgets.png",
+    description:
+      "A WordPress Extension that facilitates customizing and embedding widgets from JustWatch to a website.",
+    longDescription: justWatchWidgetsProject,
+    links: [
+      {
+        type: LINK_TYPES.REPOSITORY,
+        text: "View on GitHub",
+        link: "https://github.com/matthewcsimpson/JustWatch-Widgets",
+      },
+      {
+        type: LINK_TYPES.DOWNLOAD,
+        text: "Download Zip",
+        link: "/downloads/justwatch-widgets-1.0.0.zip",
+      },
+    ],
+    tags: [
+      TAGS.WORDPRESS,
+      TAGS.PHP,
+      TAGS.JAVASCRIPT,
+      TAGS.HTML,
+      TAGS.CSS3,
+      TAGS.GIT,
+      TAGS.GITHUB,
+    ],
+  },
   {
     id: "de-ai-google",
     title: "De-AI Google",

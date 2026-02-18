@@ -28,6 +28,7 @@ export const skillicons: Icons[] = [
   { label: "Next.js", iconClass: "nextjs", text: "" },
   { label: "Node.js", iconClass: "nodejs", text: "" },
   { label: "npm", iconClass: "npm", text: "" },
+  { label: "PHP", iconClass: "php", text: "" },
   { label: "PostgreSQL", iconClass: "postgresql", text: "" },
   { label: "Prisma", iconClass: "prisma", text: "" },
   { label: "Radix UI", iconClass: "radixui", text: "" },
@@ -41,4 +42,5 @@ export const skillicons: Icons[] = [
   { label: "TypeScript", iconClass: "typescript", text: "" },
   { label: "Vercel", iconClass: "vercel", text: "" },
   { label: "Vite", iconClass: "vite", text: "" },
+  { label: "WordPress", iconClass: "wordpress", text: "" },
 ];

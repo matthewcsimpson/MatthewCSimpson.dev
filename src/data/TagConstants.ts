@@ -32,6 +32,7 @@ export const TAGS: TagsType = {
   NEXT: { name: "NextJS", type: TAG_TYPES.FRAMEWORK },
   NODE: { name: "NodeJS", type: TAG_TYPES.FRAMEWORK },
   NPM: { name: "npm", type: TAG_TYPES.LANGUAGE },
+  PHP: { name: "PHP", type: TAG_TYPES.LANGUAGE },
   POSTGRESQL: { name: "PostgreSQL", type: TAG_TYPES.DEFAULT },
   PRISMA: { name: "Prisma", type: TAG_TYPES.FRAMEWORK },
   RADIX_UI: { name: "Radix UI", type: TAG_TYPES.FRAMEWORK },
@@ -46,4 +47,5 @@ export const TAGS: TagsType = {
   TYPESCRIPT: { name: "TypeScript", type: TAG_TYPES.LANGUAGE },
   VERCEL: { name: "Vercel", type: TAG_TYPES.DEFAULT },
   VITE: { name: "Vite", type: TAG_TYPES.FRAMEWORK },
+  WORDPRESS: { name: "WordPress", type: TAG_TYPES.FRAMEWORK },
 };
