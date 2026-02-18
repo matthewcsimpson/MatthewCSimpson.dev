@@ -1,5 +1,11 @@
 import { PersonalLink, ProjectListItem, SkillIcon, Tag } from "@/components";
-import type { Icons, ProjectData, ProjectLink, TagType } from "@/types";
+import {
+  LINK_TYPES,
+  type Icons,
+  type ProjectData,
+  type ProjectLink,
+  type TagType,
+} from "@/types";
 
 // Types
 interface GenerateLinksProps {
@@ -78,16 +84,18 @@ const generateTags = (tags: TagType[]) => {
 };
 
 const generateLinkText = (link: ProjectLink) => {
+  const isDownload = link.type === LINK_TYPES.DOWNLOAD;
   return (
     <a
       href={link.link}
-      target="_blank"
-      rel="noopener noreferrer"
+      target={isDownload ? undefined : "_blank"}
+      rel={isDownload ? undefined : "noopener noreferrer"}
+      download={isDownload}
       className="projectLinks__link"
     >
       {link.text}
       <img
-        src={"/icons/external-link.svg"}
+        src={`${isDownload ? "/icons/link-download.svg" : "/icons/link-external.svg"}`}
         alt={link.text}
         className="projectLinks__icon"
         aria-hidden="true"

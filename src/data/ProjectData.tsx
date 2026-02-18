@@ -27,6 +27,11 @@ export const projectsData: ProjectData[] = [
         text: "View on GitHub",
         link: "https://github.com/matthewcsimpson/JustWatch-Widgets",
       },
+      {
+        type: LINK_TYPES.DOWNLOAD,
+        text: "Download Zip",
+        link: "/downloads/justwatch-widgets-1.0.0.zip",
+      },
     ],
     tags: [
       TAGS.WORDPRESS,

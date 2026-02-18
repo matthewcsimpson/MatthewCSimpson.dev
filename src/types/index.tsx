@@ -27,6 +27,7 @@ export const LINK_TYPES = {
   REPOSITORY: "repository",
   CASE_STUDY: "case-study",
   LIVE: "live",
+  DOWNLOAD: "download",
 } as const;
 
 export type ProjectLinkKind = (typeof LINK_TYPES)[keyof typeof LINK_TYPES];
