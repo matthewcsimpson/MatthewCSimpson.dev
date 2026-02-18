@@ -35,6 +35,7 @@ export const projectsData: ProjectData[] = [
     ],
     tags: [
       TAGS.WORDPRESS,
+      TAGS.PHP,
       TAGS.JAVASCRIPT,
       TAGS.HTML,
       TAGS.CSS3,
