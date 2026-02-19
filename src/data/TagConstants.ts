@@ -11,6 +11,7 @@ export const TAGS: TagsType = {
   CSHARP: { name: "C Sharp", type: TAG_TYPES.LANGUAGE },
   CSS3: { name: "CSS3", type: TAG_TYPES.LANGUAGE },
   DEVTO: { name: "Dev.to", type: TAG_TYPES.DEFAULT },
+  ESLINT: { name: "ESLint", type: TAG_TYPES.DEFAULT },
   EXPRESS: { name: "Express", type: TAG_TYPES.FRAMEWORK },
   GIT: { name: "Git", type: TAG_TYPES.DEFAULT },
   GITHUB: { name: "GitHub", type: TAG_TYPES.DEFAULT },
@@ -47,5 +48,6 @@ export const TAGS: TagsType = {
   TYPESCRIPT: { name: "TypeScript", type: TAG_TYPES.LANGUAGE },
   VERCEL: { name: "Vercel", type: TAG_TYPES.DEFAULT },
   VITE: { name: "Vite", type: TAG_TYPES.FRAMEWORK },
+  VITEST: { name: "Vitest", type: TAG_TYPES.FRAMEWORK },
   WORDPRESS: { name: "WordPress", type: TAG_TYPES.FRAMEWORK },
 };

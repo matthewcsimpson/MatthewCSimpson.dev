@@ -15,7 +15,7 @@ const ProjectPage = () => {
 
   const project = useMemo(
     () => projectsData.find((proj) => proj.id === projectId),
-    [projectId]
+    [projectId],
   );
 
   if (!project) {
