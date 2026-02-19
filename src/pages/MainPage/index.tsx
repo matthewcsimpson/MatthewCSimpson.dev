@@ -5,6 +5,7 @@ import {
   About,
   Banner,
   Container,
+  ContactSection,
   Footer,
   ProjectsSection,
   ResumeSection,
@@ -16,6 +17,7 @@ const mainSections = [
   { id: "projects", label: "Projects", render: () => <ProjectsSection /> },
   { id: "skills", label: "Skills", render: () => <SkillsSection /> },
   { id: "resume", label: "Resume", render: () => <ResumeSection /> },
+  { id: "contact", label: "Contact", render: () => <ContactSection /> },
 ];
 
 /**

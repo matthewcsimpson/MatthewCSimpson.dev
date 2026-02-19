@@ -116,6 +116,8 @@ export const projectsData: ProjectData[] = [
       TAGS.REACT_ROUTER,
       TAGS.MARKDOWN,
       TAGS.ESLINT,
+      TAGS.JEST,
+      TAGS.PLAYWRIGHT,
       TAGS.GIT,
       TAGS.GITHUB,
     ],
