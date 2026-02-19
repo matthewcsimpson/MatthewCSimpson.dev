@@ -7,7 +7,7 @@ import {
   type TagType,
 } from "@/types";
 
-// Types
+// Interfaces
 interface GenerateLinksProps {
   icons: Icons[];
 }
@@ -83,6 +83,11 @@ const generateTags = (tags: TagType[]) => {
   );
 };
 
+/**
+ * Generates a link element based on the provided link object, handling both external and download links.
+ * @param link - An object containing the type, text, and link URL for the project link.
+ * @returns
+ */
 const generateLinkText = (link: ProjectLink) => {
   const isDownload = link.type === LINK_TYPES.DOWNLOAD;
   return (
