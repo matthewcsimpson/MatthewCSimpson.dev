@@ -6,6 +6,7 @@ import {
   coordConversionProject,
   deAIGoogleProject,
   justWatchWidgetsProject,
+  portfolioProject,
   rulesOfAcquisitionProject,
   whaleReportProject,
   whaleReportAdministrationProject,
@@ -98,10 +99,8 @@ export const projectsData: ProjectData[] = [
     group: "",
     imageSrc: "/images/matthewcsimpsondev.png",
     description:
-      "My personal portfolio website.  This website, actually! Built with Vite, TypeScript, Sass, React Router, and Markdown .",
-    longDescription: [
-      "I realize it's a bit weird to put your own profile page on your profile page, but I wanted to highlight a project built using Vite, and I think the two column design worked out well.",
-    ],
+      "My personal portfolio website.  This website, actually! Built with Vite, TypeScript, Sass, React Router, and Markdown.  Yes, it's a little weird to put your portfolio in your portfolio, but it allows me to showcase the project in a way that a case study or screenshot can't",
+    longDescription: portfolioProject,
     links: [
       {
         type: LINK_TYPES.REPOSITORY,
@@ -111,10 +110,12 @@ export const projectsData: ProjectData[] = [
     ],
     tags: [
       TAGS.VITE,
+      TAGS.REACT,
       TAGS.TYPESCRIPT,
       TAGS.SASS,
       TAGS.REACT_ROUTER,
       TAGS.MARKDOWN,
+      TAGS.ESLINT,
       TAGS.GIT,
       TAGS.GITHUB,
     ],
@@ -198,7 +199,7 @@ export const projectsData: ProjectData[] = [
   //   group: "Skyrocket Digital",
   //   imageSrc: "/images/shoreline-home.png",
   //   description:
-  //     "A web app for volunteers to organize and report events to clean shorelines.",
+  //     "A web app for volunteers to organise and report events to clean shorelines.",
   //   links: [
   //     {
   //       type: LINK_TYPES.LIVE,
@@ -283,7 +284,7 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: "york1",
-    title: "York1 ",
+    title: "York1",
     group: "Stack Five",
     imageSrc: "/images/york1-desktop-home.png",
     description:

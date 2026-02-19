@@ -9,6 +9,7 @@ export const skillicons: Icons[] = [
   { label: "Cloudflare", iconClass: "cloudflare", text: "" },
   { label: "C#", iconClass: "csharp", text: "" },
   { label: "CSS3", iconClass: "css3", text: "" },
+  { label: "ESLint", iconClass: "eslint", text: "" },
   { label: "Express", iconClass: "express", text: "" },
   { label: "Git", iconClass: "git", text: "" },
   { label: "GitHub", iconClass: "github", text: "" },
@@ -42,5 +43,6 @@ export const skillicons: Icons[] = [
   { label: "TypeScript", iconClass: "typescript", text: "" },
   { label: "Vercel", iconClass: "vercel", text: "" },
   { label: "Vite", iconClass: "vite", text: "" },
+  { label: "Vitest", iconClass: "vitest", text: "" },
   { label: "WordPress", iconClass: "wordpress", text: "" },
 ];

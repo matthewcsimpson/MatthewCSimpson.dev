@@ -1,10 +1,7 @@
-# MatthewCSimpson.dev
+export const portfolioProject = [
+  `# MatthewCSimpson.dev
 
 A modern, responsive developer portfolio built with Vite, React, TypeScript, Sass, and React Router. It showcases personal and professional projects, technical skills, and resume details.
-
-[Visit the live site](https://matthewcsimpson.dev)
-
-![Portfolio Screenshot](./public/images/matthewcsimpsondev.png)
 
 ## Features
 
@@ -31,19 +28,19 @@ A modern, responsive developer portfolio built with Vite, React, TypeScript, Sas
 
 1. Home page layout.
 
-![Portfolio Home](./public/images/portfolio-1-home.png)
+![Portfolio Home](/images/portfolio-1-home.png)
 
-2. Projects section.
+2. Projects section with project cards and tags.
 
-![Portfolio Projects](./public/images/portfolio-2-projects.png)
+![Portfolio Projects](/images/portfolio-2-projects.png)
 
-3. Project detail page.
+3. Project detail page with markdown-rendered content.
 
-![Portfolio Project Page](./public/images/portfolio-3-project-page.png)
+![Portfolio Project Page](/images/portfolio-3-project-page.png)
 
-4. Markdown parsing/render example.
+4. Markdown parsing and rendering example.
 
-![Portfolio Markdown Render](./public/images/portfolio-4-parse-markdown.png)
+![Portfolio Markdown Render](/images/portfolio-4-parse-markdown.png)
 
 ## License
 
@@ -53,3 +50,5 @@ This repository uses a dual-license model:
 - **Content and assets** (including text, images, resume files, and branding) are licensed under [All Rights Reserved](./LICENSE-CONTENT).
 
 © Matthew Simpson.
+`,
+];

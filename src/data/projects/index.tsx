@@ -3,6 +3,7 @@ export { code4renaProject } from "./code4rena";
 export { coordConversionProject } from "./coordconversion";
 export { deAIGoogleProject } from "./de-ai-google";
 export { justWatchWidgetsProject } from "./justwatch-widgets";
+export { portfolioProject } from "./portfolio";
 export { rulesOfAcquisitionProject } from "./rules-of-acquisition";
 export { whaleReportAdministrationProject } from "./whale-report-administration";
 export { whaleReportProject } from "./whale-report";

@@ -1,7 +1,5 @@
 export const justWatchWidgetsProject = [
-  `# JustWatch Widgets
-
-WordPress plugin that adds a Gutenberg block for embedding JustWatch widgets using TMDB or IMDB IDs.
+  `A WordPress plugin that adds a Gutenberg block for embedding JustWatch widgets using TMDB or IMDB IDs.
 
 ## Features
 
@@ -94,7 +92,7 @@ Service documentation and policies:
 
 ![Block options with overrides enabled](https://raw.githubusercontent.com/matthewcsimpson/JustWatch-Widgets/main/assets/screenshot-4.png)
 
-5. The widget rendered several different times. This does not represent all of the available customizations, just a taste of what's possible.
+5. The widget rendered several different times. This does not represent all of the available customisations, just a taste of what's possible.
 
 ![Rendered widget examples](https://raw.githubusercontent.com/matthewcsimpson/JustWatch-Widgets/main/assets/screenshot-5.png)
 

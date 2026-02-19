@@ -9,7 +9,7 @@ export const deAIGoogleProject = [
 
   `## How It Works
     
-The extension uses content scripts to ensure consistent behavior:
+The extension uses content scripts to ensure consistent behaviour:
     
 1. **Content Script**: Modifies search queries in real-time and handles form submissions
 2. **URL Rewriting**: Processes both direct navigation and dynamic page changes`,
@@ -61,5 +61,5 @@ This extension:
 
   `---
     
-**Note**: This extension modifies Google search behavior. Google may update their search parameters or detection methods, which could affect functionality.`,
+**Note**: This extension modifies Google search behaviour. Google may update their search parameters or detection methods, which could affect functionality.`,
 ];
