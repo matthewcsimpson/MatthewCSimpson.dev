@@ -4,10 +4,18 @@ import "@/components/ResumeSection/ResumeSection.scss";
 
 import { Resume } from "@/data";
 
+const ResumeText = {
+  title: "resume",
+  description: "The places I have worked and the education I have received.",
+};
+
 const ResumeSection = () => {
   return (
     <div className="resumeSection">
-      <SectionHeader title="resume" />
+      <SectionHeader
+        title={ResumeText.title}
+        description={ResumeText.description}
+      />
       <div className="resumeSection__cta">
         <a
           className="resumeSection__button resumeSection__button--resume"

@@ -1,6 +1,7 @@
 export { default as About } from "@/components/AboutSection";
 export { default as Banner } from "@/components/Banner";
 export { default as Container } from "@/components/Container";
+export { default as ContactSection } from "@/components/ContactSection";
 export { default as Footer } from "@/components/Footer";
 export { default as PersonalLink } from "@/components/PersonalLink";
 export { default as PersonalLinks } from "@/components/PersonalLinks";

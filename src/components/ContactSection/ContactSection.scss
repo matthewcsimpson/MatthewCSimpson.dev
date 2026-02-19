@@ -1,0 +1,9 @@
+.contactSection {
+    padding: 1rem;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
