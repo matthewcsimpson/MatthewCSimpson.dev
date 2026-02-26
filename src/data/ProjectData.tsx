@@ -16,7 +16,7 @@ import {
 export const projectsData: ProjectData[] = [
   {
     id: "cinelink-embeds-for-justwatch",
-    title: "CineLink Embeds for JustWatch",
+    title: "CineLink Embeds for Just Watch",
     group: "",
     imageSrc: "/images/cinelinks.png",
     description:
