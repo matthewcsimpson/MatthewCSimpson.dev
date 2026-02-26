@@ -5,7 +5,7 @@ import {
   code4renaProject,
   coordConversionProject,
   deAIGoogleProject,
-  justWatchWidgetsProject,
+  cinelinksProject,
   portfolioProject,
   rulesOfAcquisitionProject,
   whaleReportProject,
@@ -15,18 +15,18 @@ import {
 
 export const projectsData: ProjectData[] = [
   {
-    id: "justwatch-widgets",
-    title: "JustWatch Widgets",
+    id: "cinelink-embeds-for-justwatch",
+    title: "CineLink Embeds for JustWatch",
     group: "",
-    imageSrc: "/images/justwatch-widgets.png",
+    imageSrc: "/images/cinelinks.png",
     description:
       "A WordPress Extension that facilitates customizing and embedding widgets from JustWatch to a website.",
-    longDescription: justWatchWidgetsProject,
+    longDescription: cinelinksProject,
     links: [
       {
         type: LINK_TYPES.REPOSITORY,
         text: "View on GitHub",
-        link: "https://github.com/matthewcsimpson/JustWatch-Widgets",
+        link: "https://github.com/matthewcsimpson/CineLink-Embeds-for-JustWatch",
       },
       {
         type: LINK_TYPES.DOWNLOAD,

@@ -1,4 +1,4 @@
-export const justWatchWidgetsProject = [
+export const cinelinksProject = [
   `A WordPress plugin that adds a Gutenberg block for embedding JustWatch widgets using TMDB or IMDB IDs.
 
 ## Features
