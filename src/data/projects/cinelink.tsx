@@ -1,5 +1,5 @@
-export const justWatchWidgetsProject = [
-  `A WordPress plugin that adds a Gutenberg block for embedding JustWatch widgets using TMDB or IMDB IDs.
+export const cinelinksProject = [
+  `A WordPress plugin that adds a Gutenberg block for embedding Just Watch using TMDB or IMDB IDs.
 
 ## Features
 
@@ -38,8 +38,8 @@ The plugin also inserts the JustWatch code snippet into your site footer globall
 ## Installation (WordPress)
 
 1. Copy this plugin directory into \`wp-content/plugins/justwatch-widgets\`.
-2. Activate **JustWatch Widgets** in wp-admin.
-3. Go to **JustWatch Widgets** in admin menu and add your API key.
+2. Activate **CineLink Embeds for Just Watch** in wp-admin.
+3. Go to **CineLink Embeds for Just Watch** in admin menu and add your API key.
 4. Insert **JustWatch Widget** block into a post/page.
 
 ## Usage

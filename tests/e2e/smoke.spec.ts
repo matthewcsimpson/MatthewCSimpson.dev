@@ -8,11 +8,13 @@ test("home renders and project details are reachable", async ({ page }) => {
   ).toBeVisible();
 
   await page
-    .getByRole("link", { name: "View more about JustWatch Widgets" })
+    .getByRole("link", {
+      name: "View more about CineLink Embeds for Just Watch",
+    })
     .first()
     .click();
 
-  await expect(page).toHaveURL(/\/project\/justwatch-widgets$/);
+  await expect(page).toHaveURL(/\/project\/cinelink-embeds-for-justwatch$/);
   await expect(
     page.getByRole("heading", { name: "Project Overview" }),
   ).toBeVisible();
