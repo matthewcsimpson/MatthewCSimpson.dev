@@ -1,5 +1,5 @@
 export const cinelinksProject = [
-  `A WordPress plugin that adds a Gutenberg block for embedding Just Watch using TMDB or IMDB IDs.
+  `A WordPress plugin that adds a Gutenberg block for embedding JustWatch widgets using TMDB or IMDB IDs.
 
 ## Features
 
@@ -10,9 +10,22 @@ export const cinelinksProject = [
 - Configurable wrapper margin as a global default and per-block override.
 - Dynamic server-side render via block \`render.php\`.
 - Icon scale option labels shown as percentages (for example \`60%\`, \`100%\`, \`200%\`).
+- Shortcode support (\`[cinelink]\`) for use with Divi, Elementor, and other page builders.
 - Uninstall cleanup removes saved plugin options when plugin is deleted.
 
 The plugin also inserts the JustWatch code snippet into your site footer globally, which provides backward compatibility if you were previously using HTML code to embed widgets. Once you have the plugin installed, you can delete the code snippet you added to your theme.
+
+## Shortcode Usage
+
+Use the \`[cinelink]\` shortcode in any page builder's code or text module:
+
+Movie, with IMDB:
+\`[cinelink object_type="movie" id_type="imdb" external_id="tt31190636"]\`
+
+TV Show, with TMDB:
+\`[cinelink object_type="show" id_type="tmdb" external_id="245927"]\`
+
+The three required attributes are \`object_type\` (movie or show), \`id_type\` (tmdb or imdb), and \`external_id\` (the title's ID). All other display settings are inherited from the plugin's global settings page.
 
 ## Tested Language Override Options
 
@@ -37,10 +50,10 @@ The plugin also inserts the JustWatch code snippet into your site footer globall
 
 ## Installation (WordPress)
 
-1. Copy this plugin directory into \`wp-content/plugins/justwatch-widgets\`.
-2. Activate **CineLink Embeds for Just Watch** in wp-admin.
-3. Go to **CineLink Embeds for Just Watch** in admin menu and add your API key.
-4. Insert **JustWatch Widget** block into a post/page.
+1. Copy this plugin directory into \`wp-content/plugins/cinelink-embeds-for-justwatch\`.
+2. Activate **CineLink Embeds for JustWatch** in wp-admin.
+3. Go to **CineLink Embeds for JustWatch** in admin menu and add your API key.
+4. Insert **CineLink Embed for JustWatch** block into a post/page.
 
 ## Usage
 
@@ -80,9 +93,9 @@ Service documentation and policies:
 
 ![Global plugin settings in wp-admin](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-1.png)
 
-2. JustWatch Widget block controls in the editor.
+2. CineLink Embed for JustWatch block controls in the editor.
 
-![JustWatch Widget block controls in the editor](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-2.png)
+![CineLink Embed for JustWatch block controls in the editor](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-2.png)
 
 3. Block options with overrides disabled.
 
@@ -99,8 +112,8 @@ Service documentation and policies:
 ## Project Structure
 
 \`\`\`text
-justwatch-widgets/
-├─ justwatch-widgets.php
+cinelink-embeds-for-justwatch/
+├─ cinelink-embeds-for-justwatch.php
 ├─ includes/
 │  └─ admin-settings.php
 ├─ block/
@@ -112,6 +125,8 @@ justwatch-widgets/
 │     ├─ index.asset.php
 │     └─ index.js
 ├─ assets/
+│  ├─ admin-settings.css
+│  ├─ admin-settings.js
 │  ├─ justwatch-widget.css
 │  ├─ banner-772x250.png
 │  ├─ banner-1544x500.png
@@ -134,7 +149,15 @@ justwatch-widgets/
 
 ## Release Notes
 
-Current plugin version: \`1.0.0\`
+Current plugin version: \`1.0.2\`
+
+Highlights in \`1.0.2\`:
+
+- Added shortcode support for Divi, Elementor, and other page builders.
+- Updated readme with shortcode examples.
+
+Highlights in \`1.0.1\`:
+- Add custom admin footer on settings page.
 
 Highlights in \`1.0.0\`:
 
