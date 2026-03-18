@@ -86,7 +86,7 @@ Service documentation and policies:
 
 3. Block options with overrides disabled.
 
-![Block options with overrides disabled](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads /main/assets/screenshot-3.png)
+![Block options with overrides disabled](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-3.png)
 
 4. Block options with overrides enabled.
 
