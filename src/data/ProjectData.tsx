@@ -29,9 +29,9 @@ export const projectsData: ProjectData[] = [
         link: "https://github.com/matthewcsimpson/CineLink-Embeds-for-JustWatch",
       },
       {
-        type: LINK_TYPES.DOWNLOAD,
-        text: "Download Zip",
-        link: "/downloads/justwatch-widgets-1.0.0.zip",
+        type: LINK_TYPES.LIVE,
+        text: "View on WordPress Plugin Directory",
+        link: "https://wordpress.org/plugins/cinelink-embeds-for-justwatch/",
       },
     ],
     tags: [
