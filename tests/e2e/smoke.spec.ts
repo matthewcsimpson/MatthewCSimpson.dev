@@ -19,6 +19,7 @@ test("home renders and project details are reachable", async ({ page }) => {
     page.getByRole("heading", { name: "Project Overview" }),
   ).toBeVisible();
 
-  const downloadLink = page.getByRole("link", { name: "Download Zip" });
-  await expect(downloadLink).toHaveAttribute("download", "");
+  await expect(
+    page.getByRole("link", { name: "View on GitHub" }),
+  ).toBeVisible();
 });
