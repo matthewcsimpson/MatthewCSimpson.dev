@@ -78,23 +78,23 @@ Service documentation and policies:
 
 1. Global plugin settings in wp-admin.
 
-![Global plugin settings in wp-admin](https://raw.githubusercontent.com/matthewcsimpson/JustWatch-Widgets/main/assets/screenshot-1.png)
+![Global plugin settings in wp-admin](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-1.png)
 
 2. JustWatch Widget block controls in the editor.
 
-![JustWatch Widget block controls in the editor](https://raw.githubusercontent.com/matthewcsimpson/JustWatch-Widgets/main/assets/screenshot-2.png)
+![JustWatch Widget block controls in the editor](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-2.png)
 
 3. Block options with overrides disabled.
 
-![Block options with overrides disabled](https://raw.githubusercontent.com/matthewcsimpson/JustWatch-Widgets/main/assets/screenshot-3.png)
+![Block options with overrides disabled](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads /main/assets/screenshot-3.png)
 
 4. Block options with overrides enabled.
 
-![Block options with overrides enabled](https://raw.githubusercontent.com/matthewcsimpson/JustWatch-Widgets/main/assets/screenshot-4.png)
+![Block options with overrides enabled](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-4.png)
 
 5. The widget rendered several different times. This does not represent all of the available customisations, just a taste of what's possible.
 
-![Rendered widget examples](https://raw.githubusercontent.com/matthewcsimpson/JustWatch-Widgets/main/assets/screenshot-5.png)
+![Rendered widget examples](https://raw.githubusercontent.com/matthewcsimpson/CineLink-Embeds-for-JustWatch/refs/heads/main/assets/screenshot-5.png)
 
 ## Project Structure
 
