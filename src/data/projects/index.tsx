@@ -1,10 +1,13 @@
 export { castingRecallProject } from "./castingrecall";
 export { code4renaProject } from "./code4rena";
 export { coordConversionProject } from "./coordconversion";
+export { dasvandhNetworkProject } from "./dasvandh-network";
 export { deAIGoogleProject } from "./de-ai-google";
 export { cinelinksProject } from "./cinelink";
+export { filmShelvesProject } from "./filmshelves";
 export { portfolioProject } from "./portfolio";
 export { rulesOfAcquisitionProject } from "./rules-of-acquisition";
+export { whaleHealthProject } from "./whale-health";
 export { whaleReportAdministrationProject } from "./whale-report-administration";
 export { whaleReportProject } from "./whale-report";
 export { york1Project } from "./york1";
