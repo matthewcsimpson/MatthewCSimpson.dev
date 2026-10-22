@@ -28,4 +28,4 @@ dist-ssr
 # Test artifacts
 playwright-report
 test-results
-.playwright
+.playwright*
