@@ -28,30 +28,30 @@ The research team's methods also evolved during development, adding new analysis
 
 1. Projects: all whale analysis projects, filterable by status, species and population, geographic area, organization, and date range.
 
-![Projects](https://raw.githubusercontent.com/matthewcsimpson/Client-Work-Case-Studies/main/Ocean-Wise-Whale-Health/assets/projects.png)
+![Projects](/images/whale-health-1-projects.png)
 
 2. Project Surveys: each project contains surveys, with tabs to switch between surveys, every record in the project, and the project's model configuration.
 
-![Project Surveys](https://raw.githubusercontent.com/matthewcsimpson/Client-Work-Case-Studies/main/Ocean-Wise-Whale-Health/assets/project-surveys.png)
+![Project Surveys](/images/whale-health-2-project-surveys.png)
 
 3. Survey Records: every image record with its detection types, verification state, and workflow status, selectable in bulk to start the analysis workflow or export results.
 
-![Survey Records](https://raw.githubusercontent.com/matthewcsimpson/Client-Work-Case-Studies/main/Ocean-Wise-Whale-Health/assets/survey-records.png)
+![Survey Records](/images/whale-health-3-survey-records.png)
 
 4. Detection Canvas (EP Ratio): a killer whale detection with its four eye-patch landmarks, updated by a researcher.
 
-![EP Ratio](https://raw.githubusercontent.com/matthewcsimpson/Client-Work-Case-Studies/main/Ocean-Wise-Whale-Health/assets/record-ep-ratio.png)
+![EP Ratio](/images/whale-health-4-record-ep-ratio.png)
 
 5. Detection Canvas (Pregnancy): six killer whale body landmarks, with each landmark's coordinates listed and access to the audit history.
 
-![Pregnancy](https://raw.githubusercontent.com/matthewcsimpson/Client-Work-Case-Studies/main/Ocean-Wise-Whale-Health/assets/record-pregnancy.png)
+![Pregnancy](/images/whale-health-5-record-pregnancy.png)
 
 6. Detection Canvas (Body Area Index): humpback whales analyzed using a segmented body outline in addition to landmarks.
 
-![Body Area Index](https://raw.githubusercontent.com/matthewcsimpson/Client-Work-Case-Studies/main/Ocean-Wise-Whale-Health/assets/record-bai.png)
+![Body Area Index](/images/whale-health-6-record-bai.png)
 
 7. Body Area Index Visuals: the calculated BAI and life stage, a width profile chart drawn from the body outline, and the measurements exported to CSV.
 
-![Body Area Index Visuals](https://raw.githubusercontent.com/matthewcsimpson/Client-Work-Case-Studies/main/Ocean-Wise-Whale-Health/assets/record-bai-visuals.png)
+![Body Area Index Visuals](/images/whale-health-7-record-bai-visuals.png)
 `,
 ];
