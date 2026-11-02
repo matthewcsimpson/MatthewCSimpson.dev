@@ -37,8 +37,11 @@ export const initAnalytics = () => {
   loadGtagScript(measurementId);
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag = (...args: unknown[]) => {
-    window.dataLayer.push(args);
+  // gtag.js only processes `arguments` objects pushed to dataLayer; plain
+  // arrays (e.g. from rest params) are silently ignored.
+  window.gtag = function gtag() {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments);
   };
 
   window.gtag("js", new Date());

@@ -1,7 +1,11 @@
 import { useMemo } from "react";
 import { Navigate, useParams } from "react-router-dom";
 
-import { Container, ProjectBanner, ProjectDetails } from "@/components";
+import { Container } from "@/components";
+// Imported directly (not via the barrel) so react-markdown stays in this
+// lazily loaded route's chunk.
+import ProjectBanner from "@/components/ProjectBanner";
+import ProjectDetails from "@/components/ProjectDetails";
 import { projectsData } from "@/data";
 
 import "@/pages/ProjectPage/ProjectPage.scss";

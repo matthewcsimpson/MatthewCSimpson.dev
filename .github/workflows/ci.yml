@@ -2,7 +2,7 @@ name: CI
 
 on:
   pull_request:
-    branches: [production]
+    branches: [main, production]
   push:
     branches: [production]
 
@@ -16,12 +16,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version-file: package.json
           cache: npm
 
       - name: Install dependencies
