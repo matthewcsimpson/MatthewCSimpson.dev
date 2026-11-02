@@ -29,4 +29,3 @@ dist-ssr
 playwright-report
 test-results
 .playwright*
-.playbook-audits/
